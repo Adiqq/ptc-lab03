@@ -1,0 +1,645 @@
+TimeQuest Timing Analyzer report for licznik74193
+Wed Dec 14 23:36:01 2016
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'pin_name1'
+ 12. Slow Model Hold: 'pin_name1'
+ 13. Slow Model Minimum Pulse Width: 'pin_name1'
+ 14. Clock to Output Times
+ 15. Minimum Clock to Output Times
+ 16. Fast Model Setup Summary
+ 17. Fast Model Hold Summary
+ 18. Fast Model Recovery Summary
+ 19. Fast Model Removal Summary
+ 20. Fast Model Minimum Pulse Width Summary
+ 21. Fast Model Setup: 'pin_name1'
+ 22. Fast Model Hold: 'pin_name1'
+ 23. Fast Model Minimum Pulse Width: 'pin_name1'
+ 24. Clock to Output Times
+ 25. Minimum Clock to Output Times
+ 26. Multicorner Timing Analysis Summary
+ 27. Clock to Output Times
+ 28. Minimum Clock to Output Times
+ 29. Setup Transfers
+ 30. Hold Transfers
+ 31. Report TCCS
+ 32. Report RSKM
+ 33. Unconstrained Paths
+ 34. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; licznik74193                                                      ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C70F896C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets       ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+; pin_name1  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { pin_name1 } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Slow Model Fmax Summary                                                                                    ;
++-------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax        ; Restricted Fmax ; Clock Name ; Note                                                          ;
++-------------+-----------------+------------+---------------------------------------------------------------+
+; 1610.31 MHz ; 420.17 MHz      ; pin_name1  ; limit due to minimum period restriction (max I/O toggle rate) ;
++-------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-----------------------------------+
+; Slow Model Setup Summary          ;
++-----------+-------+---------------+
+; Clock     ; Slack ; End Point TNS ;
++-----------+-------+---------------+
+; pin_name1 ; 0.379 ; 0.000         ;
++-----------+-------+---------------+
+
+
++-----------------------------------+
+; Slow Model Hold Summary           ;
++-----------+-------+---------------+
+; Clock     ; Slack ; End Point TNS ;
++-----------+-------+---------------+
+; pin_name1 ; 0.391 ; 0.000         ;
++-----------+-------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++-----------+--------+-------------------+
+; Clock     ; Slack  ; End Point TNS     ;
++-----------+--------+-------------------+
+; pin_name1 ; -1.380 ; -9.380            ;
++-----------+--------+-------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'pin_name1'                                                                                 ;
++-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node      ; To Node        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
+; 0.379 ; 74193:inst|26  ; 74193:inst|26  ; pin_name1    ; pin_name1   ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379 ; 74193:inst|25  ; 74193:inst|25  ; pin_name1    ; pin_name1   ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379 ; 74193:inst|24  ; 74193:inst|24  ; pin_name1    ; pin_name1   ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379 ; 74193:inst|23  ; 74193:inst|23  ; pin_name1    ; pin_name1   ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379 ; 74193:inst1|26 ; 74193:inst1|26 ; pin_name1    ; pin_name1   ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379 ; 74193:inst1|25 ; 74193:inst1|25 ; pin_name1    ; pin_name1   ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379 ; 74193:inst1|24 ; 74193:inst1|24 ; pin_name1    ; pin_name1   ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379 ; 74193:inst1|23 ; 74193:inst1|23 ; pin_name1    ; pin_name1   ; 1.000        ; 0.000      ; 0.657      ;
++-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'pin_name1'                                                                                  ;
++-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node      ; To Node        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
+; 0.391 ; 74193:inst|26  ; 74193:inst|26  ; pin_name1    ; pin_name1   ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; 74193:inst|25  ; 74193:inst|25  ; pin_name1    ; pin_name1   ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; 74193:inst|24  ; 74193:inst|24  ; pin_name1    ; pin_name1   ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; 74193:inst|23  ; 74193:inst|23  ; pin_name1    ; pin_name1   ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; 74193:inst1|26 ; 74193:inst1|26 ; pin_name1    ; pin_name1   ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; 74193:inst1|25 ; 74193:inst1|25 ; pin_name1    ; pin_name1   ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; 74193:inst1|24 ; 74193:inst1|24 ; pin_name1    ; pin_name1   ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; 74193:inst1|23 ; 74193:inst1|23 ; pin_name1    ; pin_name1   ; 0.000        ; 0.000      ; 0.657      ;
++-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'pin_name1'                                                             ;
++--------+--------------+----------------+------------------+-----------+------------+--------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock     ; Clock Edge ; Target             ;
++--------+--------------+----------------+------------------+-----------+------------+--------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; pin_name1 ; Rise       ; pin_name1          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name1 ; Rise       ; 74193:inst1|23     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; 74193:inst1|23     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name1 ; Rise       ; 74193:inst1|24     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; 74193:inst1|24     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name1 ; Rise       ; 74193:inst1|25     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; 74193:inst1|25     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name1 ; Rise       ; 74193:inst1|26     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; 74193:inst1|26     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name1 ; Rise       ; 74193:inst|23      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; 74193:inst|23      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name1 ; Rise       ; 74193:inst|24      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; 74193:inst|24      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name1 ; Rise       ; 74193:inst|25      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; 74193:inst|25      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name1 ; Rise       ; 74193:inst|26      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; 74193:inst|26      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst1|23|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst1|23|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst1|24|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst1|24|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst1|25|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst1|25|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst1|26|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst1|26|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst1|50~1|combout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst1|50~1|combout ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst1|50~1|datad   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst1|50~1|datad   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst1|91|combout   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst1|91|combout   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst1|91|dataa     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst1|91|dataa     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst1|92|combout   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst1|92|combout   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst1|92|dataa     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst1|92|dataa     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst1|93|combout   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst1|93|combout   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst1|93|datac     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst1|93|datac     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst1|94|combout   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst1|94|combout   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst1|94|datad     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst1|94|datad     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst3|combout      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst3|combout      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst3|datad        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst3|datad        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst|23|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst|23|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst|24|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst|24|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst|25|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst|25|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst|26|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst|26|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst|28|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst|28|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst|28|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst|28|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst|50~0|combout  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst|50~0|combout  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst|50~0|datab    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst|50~0|datab    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst|91|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst|91|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst|91|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst|91|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst|92|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst|92|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst|92|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst|92|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst|93|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst|93|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst|93|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst|93|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst|94|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst|94|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst|94|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst|94|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; pin_name1|combout  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; pin_name1|combout  ;
++--------+--------------+----------------+------------------+-----------+------------+--------------------+
+
+
++------------------------------------------------------------------------+
+; Clock to Output Times                                                  ;
++------------+------------+-------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+-------+-------+------------+-----------------+
+; pin_name3  ; pin_name1  ; 7.393 ; 7.393 ; Rise       ; pin_name1       ;
+; pin_name4  ; pin_name1  ; 7.510 ; 7.510 ; Rise       ; pin_name1       ;
+; pin_name5  ; pin_name1  ; 7.654 ; 7.654 ; Rise       ; pin_name1       ;
+; pin_name6  ; pin_name1  ; 7.624 ; 7.624 ; Rise       ; pin_name1       ;
+; pin_name7  ; pin_name1  ; 7.786 ; 7.786 ; Rise       ; pin_name1       ;
+; pin_name8  ; pin_name1  ; 8.291 ; 8.291 ; Rise       ; pin_name1       ;
+; pin_name9  ; pin_name1  ; 8.654 ; 8.654 ; Rise       ; pin_name1       ;
+; pin_name10 ; pin_name1  ; 8.738 ; 8.738 ; Rise       ; pin_name1       ;
++------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                          ;
++------------+------------+-------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+-------+-------+------------+-----------------+
+; pin_name3  ; pin_name1  ; 7.393 ; 7.393 ; Rise       ; pin_name1       ;
+; pin_name4  ; pin_name1  ; 7.510 ; 7.510 ; Rise       ; pin_name1       ;
+; pin_name5  ; pin_name1  ; 7.654 ; 7.654 ; Rise       ; pin_name1       ;
+; pin_name6  ; pin_name1  ; 7.624 ; 7.624 ; Rise       ; pin_name1       ;
+; pin_name7  ; pin_name1  ; 7.786 ; 7.786 ; Rise       ; pin_name1       ;
+; pin_name8  ; pin_name1  ; 8.291 ; 8.291 ; Rise       ; pin_name1       ;
+; pin_name9  ; pin_name1  ; 8.654 ; 8.654 ; Rise       ; pin_name1       ;
+; pin_name10 ; pin_name1  ; 8.738 ; 8.738 ; Rise       ; pin_name1       ;
++------------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------+
+; Fast Model Setup Summary          ;
++-----------+-------+---------------+
+; Clock     ; Slack ; End Point TNS ;
++-----------+-------+---------------+
+; pin_name1 ; 0.665 ; 0.000         ;
++-----------+-------+---------------+
+
+
++-----------------------------------+
+; Fast Model Hold Summary           ;
++-----------+-------+---------------+
+; Clock     ; Slack ; End Point TNS ;
++-----------+-------+---------------+
+; pin_name1 ; 0.215 ; 0.000         ;
++-----------+-------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++-----------+--------+-------------------+
+; Clock     ; Slack  ; End Point TNS     ;
++-----------+--------+-------------------+
+; pin_name1 ; -1.380 ; -9.380            ;
++-----------+--------+-------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'pin_name1'                                                                                 ;
++-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node      ; To Node        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
+; 0.665 ; 74193:inst|26  ; 74193:inst|26  ; pin_name1    ; pin_name1   ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; 74193:inst|25  ; 74193:inst|25  ; pin_name1    ; pin_name1   ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; 74193:inst|24  ; 74193:inst|24  ; pin_name1    ; pin_name1   ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; 74193:inst|23  ; 74193:inst|23  ; pin_name1    ; pin_name1   ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; 74193:inst1|26 ; 74193:inst1|26 ; pin_name1    ; pin_name1   ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; 74193:inst1|25 ; 74193:inst1|25 ; pin_name1    ; pin_name1   ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; 74193:inst1|24 ; 74193:inst1|24 ; pin_name1    ; pin_name1   ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; 74193:inst1|23 ; 74193:inst1|23 ; pin_name1    ; pin_name1   ; 1.000        ; 0.000      ; 0.367      ;
++-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'pin_name1'                                                                                  ;
++-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node      ; To Node        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
+; 0.215 ; 74193:inst|26  ; 74193:inst|26  ; pin_name1    ; pin_name1   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; 74193:inst|25  ; 74193:inst|25  ; pin_name1    ; pin_name1   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; 74193:inst|24  ; 74193:inst|24  ; pin_name1    ; pin_name1   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; 74193:inst|23  ; 74193:inst|23  ; pin_name1    ; pin_name1   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; 74193:inst1|26 ; 74193:inst1|26 ; pin_name1    ; pin_name1   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; 74193:inst1|25 ; 74193:inst1|25 ; pin_name1    ; pin_name1   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; 74193:inst1|24 ; 74193:inst1|24 ; pin_name1    ; pin_name1   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; 74193:inst1|23 ; 74193:inst1|23 ; pin_name1    ; pin_name1   ; 0.000        ; 0.000      ; 0.367      ;
++-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'pin_name1'                                                             ;
++--------+--------------+----------------+------------------+-----------+------------+--------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock     ; Clock Edge ; Target             ;
++--------+--------------+----------------+------------------+-----------+------------+--------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; pin_name1 ; Rise       ; pin_name1          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name1 ; Rise       ; 74193:inst1|23     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; 74193:inst1|23     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name1 ; Rise       ; 74193:inst1|24     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; 74193:inst1|24     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name1 ; Rise       ; 74193:inst1|25     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; 74193:inst1|25     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name1 ; Rise       ; 74193:inst1|26     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; 74193:inst1|26     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name1 ; Rise       ; 74193:inst|23      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; 74193:inst|23      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name1 ; Rise       ; 74193:inst|24      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; 74193:inst|24      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name1 ; Rise       ; 74193:inst|25      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; 74193:inst|25      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name1 ; Rise       ; 74193:inst|26      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; 74193:inst|26      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst1|23|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst1|23|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst1|24|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst1|24|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst1|25|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst1|25|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst1|26|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst1|26|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst1|50~1|combout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst1|50~1|combout ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst1|50~1|datad   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst1|50~1|datad   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst1|91|combout   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst1|91|combout   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst1|91|dataa     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst1|91|dataa     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst1|92|combout   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst1|92|combout   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst1|92|dataa     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst1|92|dataa     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst1|93|combout   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst1|93|combout   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst1|93|datac     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst1|93|datac     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst1|94|combout   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst1|94|combout   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst1|94|datad     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst1|94|datad     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst3|combout      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst3|combout      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst3|datad        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst3|datad        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst|23|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst|23|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst|24|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst|24|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst|25|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst|25|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst|26|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst|26|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst|28|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst|28|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst|28|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst|28|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst|50~0|combout  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst|50~0|combout  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst|50~0|datab    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst|50~0|datab    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst|91|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst|91|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst|91|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst|91|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst|92|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst|92|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst|92|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst|92|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Fall       ; inst|93|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Fall       ; inst|93|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst|93|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst|93|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst|94|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst|94|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; inst|94|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; inst|94|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name1 ; Rise       ; pin_name1|combout  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name1 ; Rise       ; pin_name1|combout  ;
++--------+--------------+----------------+------------------+-----------+------------+--------------------+
+
+
++------------------------------------------------------------------------+
+; Clock to Output Times                                                  ;
++------------+------------+-------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+-------+-------+------------+-----------------+
+; pin_name3  ; pin_name1  ; 3.921 ; 3.921 ; Rise       ; pin_name1       ;
+; pin_name4  ; pin_name1  ; 3.955 ; 3.955 ; Rise       ; pin_name1       ;
+; pin_name5  ; pin_name1  ; 3.995 ; 3.995 ; Rise       ; pin_name1       ;
+; pin_name6  ; pin_name1  ; 3.966 ; 3.966 ; Rise       ; pin_name1       ;
+; pin_name7  ; pin_name1  ; 4.052 ; 4.052 ; Rise       ; pin_name1       ;
+; pin_name8  ; pin_name1  ; 4.251 ; 4.251 ; Rise       ; pin_name1       ;
+; pin_name9  ; pin_name1  ; 4.443 ; 4.443 ; Rise       ; pin_name1       ;
+; pin_name10 ; pin_name1  ; 4.466 ; 4.466 ; Rise       ; pin_name1       ;
++------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                          ;
++------------+------------+-------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+-------+-------+------------+-----------------+
+; pin_name3  ; pin_name1  ; 3.921 ; 3.921 ; Rise       ; pin_name1       ;
+; pin_name4  ; pin_name1  ; 3.955 ; 3.955 ; Rise       ; pin_name1       ;
+; pin_name5  ; pin_name1  ; 3.995 ; 3.995 ; Rise       ; pin_name1       ;
+; pin_name6  ; pin_name1  ; 3.966 ; 3.966 ; Rise       ; pin_name1       ;
+; pin_name7  ; pin_name1  ; 4.052 ; 4.052 ; Rise       ; pin_name1       ;
+; pin_name8  ; pin_name1  ; 4.251 ; 4.251 ; Rise       ; pin_name1       ;
+; pin_name9  ; pin_name1  ; 4.443 ; 4.443 ; Rise       ; pin_name1       ;
+; pin_name10 ; pin_name1  ; 4.466 ; 4.466 ; Rise       ; pin_name1       ;
++------------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                         ;
++------------------+-------+-------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+-------+----------+---------+---------------------+
+; Worst-case Slack ; 0.379 ; 0.215 ; N/A      ; N/A     ; -1.380              ;
+;  pin_name1       ; 0.379 ; 0.215 ; N/A      ; N/A     ; -1.380              ;
+; Design-wide TNS  ; 0.0   ; 0.0   ; 0.0      ; 0.0     ; -9.38               ;
+;  pin_name1       ; 0.000 ; 0.000 ; N/A      ; N/A     ; -9.380              ;
++------------------+-------+-------+----------+---------+---------------------+
+
+
++------------------------------------------------------------------------+
+; Clock to Output Times                                                  ;
++------------+------------+-------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+-------+-------+------------+-----------------+
+; pin_name3  ; pin_name1  ; 7.393 ; 7.393 ; Rise       ; pin_name1       ;
+; pin_name4  ; pin_name1  ; 7.510 ; 7.510 ; Rise       ; pin_name1       ;
+; pin_name5  ; pin_name1  ; 7.654 ; 7.654 ; Rise       ; pin_name1       ;
+; pin_name6  ; pin_name1  ; 7.624 ; 7.624 ; Rise       ; pin_name1       ;
+; pin_name7  ; pin_name1  ; 7.786 ; 7.786 ; Rise       ; pin_name1       ;
+; pin_name8  ; pin_name1  ; 8.291 ; 8.291 ; Rise       ; pin_name1       ;
+; pin_name9  ; pin_name1  ; 8.654 ; 8.654 ; Rise       ; pin_name1       ;
+; pin_name10 ; pin_name1  ; 8.738 ; 8.738 ; Rise       ; pin_name1       ;
++------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                          ;
++------------+------------+-------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+-------+-------+------------+-----------------+
+; pin_name3  ; pin_name1  ; 3.921 ; 3.921 ; Rise       ; pin_name1       ;
+; pin_name4  ; pin_name1  ; 3.955 ; 3.955 ; Rise       ; pin_name1       ;
+; pin_name5  ; pin_name1  ; 3.995 ; 3.995 ; Rise       ; pin_name1       ;
+; pin_name6  ; pin_name1  ; 3.966 ; 3.966 ; Rise       ; pin_name1       ;
+; pin_name7  ; pin_name1  ; 4.052 ; 4.052 ; Rise       ; pin_name1       ;
+; pin_name8  ; pin_name1  ; 4.251 ; 4.251 ; Rise       ; pin_name1       ;
+; pin_name9  ; pin_name1  ; 4.443 ; 4.443 ; Rise       ; pin_name1       ;
+; pin_name10 ; pin_name1  ; 4.466 ; 4.466 ; Rise       ; pin_name1       ;
++------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------+
+; Setup Transfers                                                    ;
++------------+-----------+----------+----------+----------+----------+
+; From Clock ; To Clock  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+-----------+----------+----------+----------+----------+
+; pin_name1  ; pin_name1 ; 8        ; 0        ; 0        ; 0        ;
++------------+-----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++--------------------------------------------------------------------+
+; Hold Transfers                                                     ;
++------------+-----------+----------+----------+----------+----------+
+; From Clock ; To Clock  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+-----------+----------+----------+----------+----------+
+; pin_name1  ; pin_name1 ; 8        ; 0        ; 0        ; 0        ;
++------------+-----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 0     ; 0    ;
+; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Output Ports      ; 8     ; 8    ;
+; Unconstrained Output Port Paths ; 8     ; 8    ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Dec 14 23:36:00 2016
+Info: Command: quartus_sta licznik74193 -c licznik74193
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'licznik74193.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name pin_name1 pin_name1
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Info (332146): Worst-case setup slack is 0.379
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.379         0.000 pin_name1 
+Info (332146): Worst-case hold slack is 0.391
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.391         0.000 pin_name1 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380        -9.380 pin_name1 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332146): Worst-case setup slack is 0.665
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.665         0.000 pin_name1 
+Info (332146): Worst-case hold slack is 0.215
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.215         0.000 pin_name1 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380        -9.380 pin_name1 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 433 megabytes
+    Info: Processing ended: Wed Dec 14 23:36:01 2016
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

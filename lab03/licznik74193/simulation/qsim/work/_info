@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Projekty\PTC\lab03\licznik74193\simulation\qsim
+vlicznik74193
+Z1 I1z1bQN:Y:HQR6hhzQ]KoM1
+Z2 Vi;MOYfR4PobUaiod`9n2f1
+Z3 dE:\Projekty\PTC\lab03\licznik74193\simulation\qsim
+Z4 w1481754570
+Z5 8licznik74193.vo
+Z6 Flicznik74193.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|licznik74193.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 Z@RA2i6^O]ELiHK[1a;Gc0
+!s85 0
+Z11 !s108 1481754571.360000
+Z12 !s107 licznik74193.vo|
+!s101 -O0
+vlicznik74193_vlg_check_tst
+!i10b 1
+Z13 !s100 VQ=BG579F:AVI_>>?l]@@1
+Z14 IM3J4Vo3iIA0]>PiL4SIJQ0
+Z15 V=LjfN_J<RMF46an9O0OB^0
+R3
+R4
+Z16 8licznik74193.vt
+Z17 Flicznik74193.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z18 !s108 1481754571.406000
+Z19 !s107 licznik74193.vt|
+Z20 !s90 -work|work|licznik74193.vt|
+!s101 -O0
+R9
+vlicznik74193_vlg_sample_tst
+!i10b 1
+Z21 !s100 Bml6dGje3h62SCd20H9oM1
+Z22 IcZZA9e=h?EOODX43XRc]M0
+Z23 VOWd6jQN;4H0goQ=Zac3nC3
+R3
+R4
+R16
+R17
+L0 29
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9
+vlicznik74193_vlg_vec_tst
+!i10b 1
+Z24 !s100 JVFdc_1g>nWm<5DYPPa@_3
+Z25 Id0B6kV@KR]^L@Y0Hc29IN1
+Z26 VG=60I=8R`Dl<8<d77<<WM1
+R3
+R4
+R16
+R17
+Z27 L0 353
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9
