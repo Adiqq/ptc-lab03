@@ -1,10 +1,9 @@
 |licznik74161
 pin_name3 <= 74161:inst.QA
-pin_name2 => 74161:inst1.ENP
-pin_name2 => 74161:inst1.ENT
+pin_name1 => 74161:inst1.CLK
+pin_name1 => 74161:inst.CLK
 pin_name2 => 74161:inst.ENP
 pin_name2 => 74161:inst.ENT
-pin_name1 => 74161:inst.CLK
 pin_name4 <= 74161:inst.QB
 pin_name5 <= 74161:inst.QC
 pin_name6 <= 74161:inst.QD

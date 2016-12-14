@@ -134,10 +134,12 @@ TRANSITION_LIST("pin_name1")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 500;
-			LEVEL 0 FOR 10.0;
-			LEVEL 1 FOR 10.0;
+			REPEAT = 166;
+			LEVEL 0 FOR 30.0;
+			LEVEL 1 FOR 30.0;
 		}
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
 	}
 }
 
@@ -155,27 +157,14 @@ TRANSITION_LIST("pin_name3")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
+		LEVEL 0 FOR 36.299;
 		NODE
 		{
-			REPEAT = 4;
-			NODE
-			{
-				REPEAT = 51;
-				LEVEL 1 FOR 20.0;
-				LEVEL 0 FOR 20.0;
-			}
-			LEVEL 1 FOR 20.0;
-			LEVEL 0 FOR 40.0;
+			REPEAT = 83;
+			LEVEL 1 FOR 60.0;
+			LEVEL 0 FOR 60.0;
 		}
-		NODE
-		{
-			REPEAT = 39;
-			LEVEL 1 FOR 20.0;
-			LEVEL 0 FOR 20.0;
-		}
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 3.701;
 	}
 }
 
@@ -184,27 +173,14 @@ TRANSITION_LIST("pin_name4")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
+		LEVEL 0 FOR 96.528;
 		NODE
 		{
-			REPEAT = 4;
-			NODE
-			{
-				REPEAT = 25;
-				LEVEL 1 FOR 40.0;
-				LEVEL 0 FOR 40.0;
-			}
-			LEVEL 1 FOR 40.0;
-			LEVEL 0 FOR 60.0;
+			REPEAT = 41;
+			LEVEL 1 FOR 120.0;
+			LEVEL 0 FOR 120.0;
 		}
-		NODE
-		{
-			REPEAT = 19;
-			LEVEL 1 FOR 40.0;
-			LEVEL 0 FOR 40.0;
-		}
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 63.472;
 	}
 }
 
@@ -213,27 +189,14 @@ TRANSITION_LIST("pin_name5")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 70.0;
+		LEVEL 0 FOR 216.758;
 		NODE
 		{
-			REPEAT = 4;
-			NODE
-			{
-				REPEAT = 12;
-				LEVEL 1 FOR 80.0;
-				LEVEL 0 FOR 80.0;
-			}
-			LEVEL 1 FOR 80.0;
-			LEVEL 0 FOR 100.0;
+			REPEAT = 20;
+			LEVEL 1 FOR 240.0;
+			LEVEL 0 FOR 240.0;
 		}
-		NODE
-		{
-			REPEAT = 9;
-			LEVEL 1 FOR 80.0;
-			LEVEL 0 FOR 80.0;
-		}
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 183.242;
 	}
 }
 
@@ -242,41 +205,15 @@ TRANSITION_LIST("pin_name6")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 150.0;
+		LEVEL 0 FOR 456.435;
 		NODE
 		{
-			REPEAT = 6;
-			LEVEL 1 FOR 160.0;
-			LEVEL 0 FOR 160.0;
+			REPEAT = 9;
+			LEVEL 1 FOR 480.0;
+			LEVEL 0 FOR 480.0;
 		}
-		NODE
-		{
-			REPEAT = 2;
-			LEVEL 1 FOR 20.0;
-			NODE
-			{
-				REPEAT = 6;
-				LEVEL 0 FOR 160.0;
-				LEVEL 1 FOR 160.0;
-			}
-			LEVEL 0 FOR 160.0;
-		}
-		LEVEL 1 FOR 20.0;
-		NODE
-		{
-			REPEAT = 6;
-			LEVEL 0 FOR 160.0;
-			LEVEL 1 FOR 160.0;
-		}
-		LEVEL 0 FOR 160.0;
-		LEVEL 1 FOR 20.0;
-		NODE
-		{
-			REPEAT = 5;
-			LEVEL 0 FOR 160.0;
-			LEVEL 1 FOR 160.0;
-		}
-		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 480.0;
+		LEVEL 0 FOR 423.565;
 	}
 }
 
@@ -285,26 +222,15 @@ TRANSITION_LIST("pin_name7")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 310.0;
+		LEVEL 0 FOR 936.592;
 		NODE
 		{
 			REPEAT = 4;
-			NODE
-			{
-				REPEAT = 2;
-				LEVEL 1 FOR 320.0;
-				LEVEL 0 FOR 320.0;
-			}
-			LEVEL 1 FOR 320.0;
-			LEVEL 0 FOR 500.0;
+			LEVEL 1 FOR 960.0;
+			LEVEL 0 FOR 960.0;
 		}
-		NODE
-		{
-			REPEAT = 2;
-			LEVEL 1 FOR 320.0;
-			LEVEL 0 FOR 320.0;
-		}
-		LEVEL 1 FOR 10.0;
+		LEVEL 1 FOR 960.0;
+		LEVEL 0 FOR 423.408;
 	}
 }
 
@@ -313,17 +239,13 @@ TRANSITION_LIST("pin_name8")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 630.0;
-		NODE
-		{
-			REPEAT = 4;
-			LEVEL 1 FOR 640.0;
-			LEVEL 0 FOR 640.0;
-			LEVEL 1 FOR 180.0;
-			LEVEL 0 FOR 640.0;
-		}
-		LEVEL 1 FOR 640.0;
-		LEVEL 0 FOR 330.0;
+		LEVEL 0 FOR 1896.446;
+		LEVEL 1 FOR 1920.0;
+		LEVEL 0 FOR 1920.0;
+		LEVEL 1 FOR 1.447;
+		LEVEL 0 FOR 1918.553;
+		LEVEL 1 FOR 1920.0;
+		LEVEL 0 FOR 423.554;
 	}
 }
 
@@ -332,14 +254,10 @@ TRANSITION_LIST("pin_name9")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1270.0;
-		NODE
-		{
-			REPEAT = 4;
-			LEVEL 1 FOR 820.0;
-			LEVEL 0 FOR 1280.0;
-		}
-		LEVEL 1 FOR 330.0;
+		LEVEL 0 FOR 3816.471;
+		LEVEL 1 FOR 1921.447;
+		LEVEL 0 FOR 3838.553;
+		LEVEL 1 FOR 423.529;
 	}
 }
 

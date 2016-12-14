@@ -1,5 +1,5 @@
 Simulator report for licznik74161
-Wed Dec 14 20:11:09 2016
+Wed Dec 14 22:15:03 2016
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -45,11 +45,12 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 10.0 us      ;
-; Simulation Netlist Size     ; 39 nodes     ;
-; Simulation Coverage         ;      87.18 % ;
-; Total Number of Transitions ; 8536         ;
+; Simulation Netlist Size     ; 28 nodes     ;
+; Simulation Coverage         ;      96.43 % ;
+; Total Number of Transitions ; 2250         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
+; Device                      ; EP2C70F896C6 ;
 +-----------------------------+--------------+
 
 
@@ -58,7 +59,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------------+-------------------------------------------------+---------------+
 ; Option                                                                                     ; Setting                                         ; Default Value ;
 +--------------------------------------------------------------------------------------------+-------------------------------------------------+---------------+
-; Simulation mode                                                                            ; Functional                                      ; Timing        ;
+; Simulation mode                                                                            ; Timing                                          ; Timing        ;
 ; Start time                                                                                 ; 0 ns                                            ; 0 ns          ;
 ; Simulation results format                                                                  ; VWF                                             ;               ;
 ; Vector input source                                                                        ; E:/Projekty/PTC/lab03/licznik74161/Waveform.vwf ;               ;
@@ -94,85 +95,70 @@ Please use Quartus II 64-Bit to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      87.18 % ;
-; Total nodes checked                                 ; 39           ;
-; Total output ports checked                          ; 39           ;
-; Total output ports with complete 1/0-value coverage ; 34           ;
-; Total output ports with no 1/0-value coverage       ; 5            ;
-; Total output ports with no 1-value coverage         ; 5            ;
-; Total output ports with no 0-value coverage         ; 5            ;
+; Total coverage as a percentage                      ;      96.43 % ;
+; Total nodes checked                                 ; 28           ;
+; Total output ports checked                          ; 28           ;
+; Total output ports with complete 1/0-value coverage ; 27           ;
+; Total output ports with no 1/0-value coverage       ; 1            ;
+; Total output ports with no 1-value coverage         ; 1            ;
+; Total output ports with no 0-value coverage         ; 1            ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+------------------------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                                          ;
-+-----------------------------------------+-----------------------------------------+------------------+
-; Node Name                               ; Output Port Name                        ; Output Port Type ;
-+-----------------------------------------+-----------------------------------------+------------------+
-; |licznik74161|pin_name3                 ; |licznik74161|pin_name3                 ; pin_out          ;
-; |licznik74161|inst5                     ; |licznik74161|inst5                     ; out0             ;
-; |licznik74161|pin_name1                 ; |licznik74161|pin_name1                 ; out              ;
-; |licznik74161|pin_name4                 ; |licznik74161|pin_name4                 ; pin_out          ;
-; |licznik74161|pin_name5                 ; |licznik74161|pin_name5                 ; pin_out          ;
-; |licznik74161|pin_name6                 ; |licznik74161|pin_name6                 ; pin_out          ;
-; |licznik74161|pin_name7                 ; |licznik74161|pin_name7                 ; pin_out          ;
-; |licznik74161|pin_name8                 ; |licznik74161|pin_name8                 ; pin_out          ;
-; |licznik74161|pin_name9                 ; |licznik74161|pin_name9                 ; pin_out          ;
-; |licznik74161|74161:inst1|f74161:sub|99 ; |licznik74161|74161:inst1|f74161:sub|99 ; regout           ;
-; |licznik74161|74161:inst1|f74161:sub|97 ; |licznik74161|74161:inst1|f74161:sub|97 ; out0             ;
-; |licznik74161|74161:inst1|f74161:sub|96 ; |licznik74161|74161:inst1|f74161:sub|96 ; out0             ;
-; |licznik74161|74161:inst1|f74161:sub|84 ; |licznik74161|74161:inst1|f74161:sub|84 ; out0             ;
-; |licznik74161|74161:inst1|f74161:sub|87 ; |licznik74161|74161:inst1|f74161:sub|87 ; regout           ;
-; |licznik74161|74161:inst1|f74161:sub|90 ; |licznik74161|74161:inst1|f74161:sub|90 ; out0             ;
-; |licznik74161|74161:inst1|f74161:sub|89 ; |licznik74161|74161:inst1|f74161:sub|89 ; out0             ;
-; |licznik74161|74161:inst1|f74161:sub|80 ; |licznik74161|74161:inst1|f74161:sub|80 ; out0             ;
-; |licznik74161|74161:inst1|f74161:sub|9  ; |licznik74161|74161:inst1|f74161:sub|9  ; regout           ;
-; |licznik74161|74161:inst1|f74161:sub|78 ; |licznik74161|74161:inst1|f74161:sub|78 ; out0             ;
-; |licznik74161|74161:inst|f74161:sub|104 ; |licznik74161|74161:inst|f74161:sub|104 ; out0             ;
-; |licznik74161|74161:inst|f74161:sub|110 ; |licznik74161|74161:inst|f74161:sub|110 ; regout           ;
-; |licznik74161|74161:inst|f74161:sub|107 ; |licznik74161|74161:inst|f74161:sub|107 ; out0             ;
-; |licznik74161|74161:inst|f74161:sub|106 ; |licznik74161|74161:inst|f74161:sub|106 ; out0             ;
-; |licznik74161|74161:inst|f74161:sub|94  ; |licznik74161|74161:inst|f74161:sub|94  ; out0             ;
-; |licznik74161|74161:inst|f74161:sub|99  ; |licznik74161|74161:inst|f74161:sub|99  ; regout           ;
-; |licznik74161|74161:inst|f74161:sub|97  ; |licznik74161|74161:inst|f74161:sub|97  ; out0             ;
-; |licznik74161|74161:inst|f74161:sub|96  ; |licznik74161|74161:inst|f74161:sub|96  ; out0             ;
-; |licznik74161|74161:inst|f74161:sub|84  ; |licznik74161|74161:inst|f74161:sub|84  ; out0             ;
-; |licznik74161|74161:inst|f74161:sub|87  ; |licznik74161|74161:inst|f74161:sub|87  ; regout           ;
-; |licznik74161|74161:inst|f74161:sub|90  ; |licznik74161|74161:inst|f74161:sub|90  ; out0             ;
-; |licznik74161|74161:inst|f74161:sub|89  ; |licznik74161|74161:inst|f74161:sub|89  ; out0             ;
-; |licznik74161|74161:inst|f74161:sub|80  ; |licznik74161|74161:inst|f74161:sub|80  ; out0             ;
-; |licznik74161|74161:inst|f74161:sub|9   ; |licznik74161|74161:inst|f74161:sub|9   ; regout           ;
-; |licznik74161|74161:inst|f74161:sub|78  ; |licznik74161|74161:inst|f74161:sub|78  ; out0             ;
-+-----------------------------------------+-----------------------------------------+------------------+
++----------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                              ;
++-------------------------------------------+-------------------------------------------+------------------+
+; Node Name                                 ; Output Port Name                          ; Output Port Type ;
++-------------------------------------------+-------------------------------------------+------------------+
+; |licznik74161|74161:inst|f74161:sub|9     ; |licznik74161|74161:inst|f74161:sub|9     ; regout           ;
+; |licznik74161|74161:inst|f74161:sub|87    ; |licznik74161|74161:inst|f74161:sub|87    ; regout           ;
+; |licznik74161|74161:inst|f74161:sub|99    ; |licznik74161|74161:inst|f74161:sub|99    ; regout           ;
+; |licznik74161|74161:inst|f74161:sub|110   ; |licznik74161|74161:inst|f74161:sub|110   ; regout           ;
+; |licznik74161|74161:inst1|f74161:sub|9    ; |licznik74161|74161:inst1|f74161:sub|9    ; regout           ;
+; |licznik74161|74161:inst1|f74161:sub|87   ; |licznik74161|74161:inst1|f74161:sub|87   ; regout           ;
+; |licznik74161|74161:inst1|f74161:sub|99   ; |licznik74161|74161:inst1|f74161:sub|99   ; regout           ;
+; |licznik74161|74161:inst|f74161:sub|9~0   ; |licznik74161|74161:inst|f74161:sub|9~0   ; combout          ;
+; |licznik74161|inst5~0                     ; |licznik74161|inst5~0                     ; combout          ;
+; |licznik74161|74161:inst|f74161:sub|87~0  ; |licznik74161|74161:inst|f74161:sub|87~0  ; combout          ;
+; |licznik74161|74161:inst|f74161:sub|99~0  ; |licznik74161|74161:inst|f74161:sub|99~0  ; combout          ;
+; |licznik74161|74161:inst|f74161:sub|106~0 ; |licznik74161|74161:inst|f74161:sub|106~0 ; combout          ;
+; |licznik74161|74161:inst|f74161:sub|110~0 ; |licznik74161|74161:inst|f74161:sub|110~0 ; combout          ;
+; |licznik74161|74161:inst|f74161:sub|104~0 ; |licznik74161|74161:inst|f74161:sub|104~0 ; combout          ;
+; |licznik74161|74161:inst1|f74161:sub|9~0  ; |licznik74161|74161:inst1|f74161:sub|9~0  ; combout          ;
+; |licznik74161|74161:inst1|f74161:sub|89~0 ; |licznik74161|74161:inst1|f74161:sub|89~0 ; combout          ;
+; |licznik74161|74161:inst1|f74161:sub|99~0 ; |licznik74161|74161:inst1|f74161:sub|99~0 ; combout          ;
+; |licznik74161|74161:inst1|f74161:sub|87~2 ; |licznik74161|74161:inst1|f74161:sub|87~2 ; combout          ;
+; |licznik74161|pin_name3                   ; |licznik74161|pin_name3                   ; padio            ;
+; |licznik74161|pin_name4                   ; |licznik74161|pin_name4                   ; padio            ;
+; |licznik74161|pin_name5                   ; |licznik74161|pin_name5                   ; padio            ;
+; |licznik74161|pin_name6                   ; |licznik74161|pin_name6                   ; padio            ;
+; |licznik74161|pin_name7                   ; |licznik74161|pin_name7                   ; padio            ;
+; |licznik74161|pin_name8                   ; |licznik74161|pin_name8                   ; padio            ;
+; |licznik74161|pin_name9                   ; |licznik74161|pin_name9                   ; padio            ;
+; |licznik74161|pin_name1                   ; |licznik74161|pin_name1~corein            ; combout          ;
+; |licznik74161|pin_name1~clkctrl           ; |licznik74161|pin_name1~clkctrl           ; outclk           ;
++-------------------------------------------+-------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+------------------------------------------------------------------------------------------------------+
-; Missing 1-Value Coverage                                                                             ;
-+-----------------------------------------+-----------------------------------------+------------------+
-; Node Name                               ; Output Port Name                        ; Output Port Type ;
-+-----------------------------------------+-----------------------------------------+------------------+
-; |licznik74161|pin_name2                 ; |licznik74161|pin_name2                 ; out              ;
-; |licznik74161|74161:inst1|f74161:sub|79 ; |licznik74161|74161:inst1|f74161:sub|79 ; out0             ;
-; |licznik74161|74161:inst1|f74161:sub|82 ; |licznik74161|74161:inst1|f74161:sub|82 ; out0             ;
-; |licznik74161|74161:inst|f74161:sub|79  ; |licznik74161|74161:inst|f74161:sub|79  ; out0             ;
-; |licznik74161|74161:inst|f74161:sub|82  ; |licznik74161|74161:inst|f74161:sub|82  ; out0             ;
-+-----------------------------------------+-----------------------------------------+------------------+
++-----------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                    ;
++-------------------------+--------------------------------+------------------+
+; Node Name               ; Output Port Name               ; Output Port Type ;
++-------------------------+--------------------------------+------------------+
+; |licznik74161|pin_name2 ; |licznik74161|pin_name2~corein ; combout          ;
++-------------------------+--------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+------------------------------------------------------------------------------------------------------+
-; Missing 0-Value Coverage                                                                             ;
-+-----------------------------------------+-----------------------------------------+------------------+
-; Node Name                               ; Output Port Name                        ; Output Port Type ;
-+-----------------------------------------+-----------------------------------------+------------------+
-; |licznik74161|pin_name2                 ; |licznik74161|pin_name2                 ; out              ;
-; |licznik74161|74161:inst1|f74161:sub|79 ; |licznik74161|74161:inst1|f74161:sub|79 ; out0             ;
-; |licznik74161|74161:inst1|f74161:sub|82 ; |licznik74161|74161:inst1|f74161:sub|82 ; out0             ;
-; |licznik74161|74161:inst|f74161:sub|79  ; |licznik74161|74161:inst|f74161:sub|79  ; out0             ;
-; |licznik74161|74161:inst|f74161:sub|82  ; |licznik74161|74161:inst|f74161:sub|82  ; out0             ;
-+-----------------------------------------+-----------------------------------------+------------------+
++-----------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                    ;
++-------------------------+--------------------------------+------------------+
+; Node Name               ; Output Port Name               ; Output Port Type ;
++-------------------------+--------------------------------+------------------+
+; |licznik74161|pin_name2 ; |licznik74161|pin_name2~corein ; combout          ;
++-------------------------+--------------------------------+------------------+
 
 
 +---------------------+
@@ -188,19 +174,19 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Simulator
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Dec 14 20:11:09 2016
+    Info: Processing started: Wed Dec 14 22:15:02 2016
 Info: Command: quartus_sim --simulation_results_format=VWF licznik74161 -c licznik74161
 Info (324025): Using vector source file "E:/Projekty/PTC/lab03/licznik74161/Waveform.vwf"
 Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info (310002): Simulation partitioned into 1 sub-simulations
-Info (328053): Simulation coverage is      87.18 %
-Info (328052): Number of transitions in simulation is 8536
+Info (328053): Simulation coverage is      96.43 %
+Info (328052): Number of transitions in simulation is 2250
 Info (324045): Vector file licznik74161.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 331 megabytes
-    Info: Processing ended: Wed Dec 14 20:11:09 2016
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 364 megabytes
+    Info: Processing ended: Wed Dec 14 22:15:03 2016
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 
