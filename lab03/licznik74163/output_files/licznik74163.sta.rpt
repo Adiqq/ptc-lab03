@@ -1,0 +1,739 @@
+TimeQuest Timing Analyzer report for licznik74163
+Wed Dec 14 21:52:33 2016
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'pin_name2'
+ 12. Slow Model Hold: 'pin_name2'
+ 13. Slow Model Minimum Pulse Width: 'pin_name2'
+ 14. Setup Times
+ 15. Hold Times
+ 16. Clock to Output Times
+ 17. Minimum Clock to Output Times
+ 18. Fast Model Setup Summary
+ 19. Fast Model Hold Summary
+ 20. Fast Model Recovery Summary
+ 21. Fast Model Removal Summary
+ 22. Fast Model Minimum Pulse Width Summary
+ 23. Fast Model Setup: 'pin_name2'
+ 24. Fast Model Hold: 'pin_name2'
+ 25. Fast Model Minimum Pulse Width: 'pin_name2'
+ 26. Setup Times
+ 27. Hold Times
+ 28. Clock to Output Times
+ 29. Minimum Clock to Output Times
+ 30. Multicorner Timing Analysis Summary
+ 31. Setup Times
+ 32. Hold Times
+ 33. Clock to Output Times
+ 34. Minimum Clock to Output Times
+ 35. Setup Transfers
+ 36. Hold Transfers
+ 37. Report TCCS
+ 38. Report RSKM
+ 39. Unconstrained Paths
+ 40. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; licznik74163                                                      ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C70F896C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets       ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+; pin_name2  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { pin_name2 } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Slow Model Fmax Summary                                                                                   ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 556.48 MHz ; 420.17 MHz      ; pin_name2  ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------+
+; Slow Model Setup Summary           ;
++-----------+--------+---------------+
+; Clock     ; Slack  ; End Point TNS ;
++-----------+--------+---------------+
+; pin_name2 ; -0.797 ; -4.072        ;
++-----------+--------+---------------+
+
+
++-----------------------------------+
+; Slow Model Hold Summary           ;
++-----------+-------+---------------+
+; Clock     ; Slack ; End Point TNS ;
++-----------+-------+---------------+
+; pin_name2 ; 0.391 ; 0.000         ;
++-----------+-------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++-----------+--------+-------------------+
+; Clock     ; Slack  ; End Point TNS     ;
++-----------+--------+-------------------+
+; pin_name2 ; -1.380 ; -8.380            ;
++-----------+--------+-------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'pin_name2'                                                                                                          ;
++--------+----------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                  ; To Node                    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+; -0.797 ; 74163:inst|f74163:sub|34   ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.833      ;
+; -0.761 ; 74163:inst1|f74163:sub|111 ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.797      ;
+; -0.699 ; 74163:inst|f74163:sub|134  ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.735      ;
+; -0.698 ; 74163:inst|f74163:sub|134  ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.734      ;
+; -0.635 ; 74163:inst|f74163:sub|122  ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.671      ;
+; -0.608 ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.644      ;
+; -0.590 ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.626      ;
+; -0.576 ; 74163:inst1|f74163:sub|122 ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.612      ;
+; -0.575 ; 74163:inst1|f74163:sub|122 ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.611      ;
+; -0.504 ; 74163:inst|f74163:sub|111  ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.540      ;
+; -0.487 ; 74163:inst|f74163:sub|34   ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.523      ;
+; -0.483 ; 74163:inst|f74163:sub|34   ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.519      ;
+; -0.483 ; 74163:inst|f74163:sub|34   ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.519      ;
+; -0.471 ; 74163:inst|f74163:sub|134  ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.507      ;
+; -0.468 ; 74163:inst1|f74163:sub|111 ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.504      ;
+; -0.467 ; 74163:inst1|f74163:sub|111 ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.503      ;
+; -0.465 ; 74163:inst|f74163:sub|134  ; 74163:inst|f74163:sub|34   ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.501      ;
+; -0.464 ; 74163:inst|f74163:sub|34   ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.500      ;
+; -0.462 ; 74163:inst|f74163:sub|134  ; 74163:inst|f74163:sub|111  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.498      ;
+; -0.461 ; 74163:inst|f74163:sub|134  ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.497      ;
+; -0.342 ; 74163:inst1|f74163:sub|122 ; 74163:inst|f74163:sub|34   ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.378      ;
+; -0.339 ; 74163:inst1|f74163:sub|122 ; 74163:inst|f74163:sub|111  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.375      ;
+; -0.338 ; 74163:inst1|f74163:sub|122 ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.374      ;
+; -0.338 ; 74163:inst1|f74163:sub|122 ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.374      ;
+; -0.325 ; 74163:inst|f74163:sub|122  ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.361      ;
+; -0.321 ; 74163:inst|f74163:sub|122  ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.357      ;
+; -0.321 ; 74163:inst|f74163:sub|122  ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.357      ;
+; -0.251 ; 74163:inst|f74163:sub|111  ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.287      ;
+; -0.234 ; 74163:inst1|f74163:sub|111 ; 74163:inst|f74163:sub|34   ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.270      ;
+; -0.231 ; 74163:inst1|f74163:sub|111 ; 74163:inst|f74163:sub|111  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.267      ;
+; -0.230 ; 74163:inst1|f74163:sub|111 ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.266      ;
+; -0.210 ; 74163:inst1|f74163:sub|111 ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.246      ;
+; -0.194 ; 74163:inst|f74163:sub|111  ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.230      ;
+; -0.190 ; 74163:inst|f74163:sub|111  ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.226      ;
+; -0.190 ; 74163:inst|f74163:sub|111  ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.226      ;
+; -0.092 ; 74163:inst|f74163:sub|34   ; 74163:inst|f74163:sub|111  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.128      ;
+; -0.078 ; 74163:inst1|f74163:sub|122 ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 1.114      ;
+; 0.379  ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; 74163:inst|f74163:sub|134  ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; 74163:inst|f74163:sub|34   ; 74163:inst|f74163:sub|34   ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; 74163:inst|f74163:sub|122  ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; 74163:inst|f74163:sub|111  ; 74163:inst|f74163:sub|111  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.657      ;
++--------+----------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'pin_name2'                                                                                                          ;
++-------+----------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                  ; To Node                    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+; 0.391 ; 74163:inst|f74163:sub|111  ; 74163:inst|f74163:sub|111  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; 74163:inst|f74163:sub|122  ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; 74163:inst1|f74163:sub|122 ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; 74163:inst|f74163:sub|134  ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; 74163:inst1|f74163:sub|111 ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; 74163:inst|f74163:sub|34   ; 74163:inst|f74163:sub|34   ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.657      ;
+; 0.848 ; 74163:inst1|f74163:sub|122 ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.114      ;
+; 0.862 ; 74163:inst|f74163:sub|34   ; 74163:inst|f74163:sub|111  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.128      ;
+; 0.960 ; 74163:inst|f74163:sub|111  ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.226      ;
+; 0.960 ; 74163:inst|f74163:sub|111  ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.226      ;
+; 0.964 ; 74163:inst|f74163:sub|111  ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.230      ;
+; 0.980 ; 74163:inst1|f74163:sub|111 ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.246      ;
+; 0.984 ; 74163:inst|f74163:sub|134  ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.250      ;
+; 1.000 ; 74163:inst1|f74163:sub|111 ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.266      ;
+; 1.000 ; 74163:inst1|f74163:sub|111 ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.266      ;
+; 1.001 ; 74163:inst1|f74163:sub|111 ; 74163:inst|f74163:sub|111  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.267      ;
+; 1.004 ; 74163:inst1|f74163:sub|111 ; 74163:inst|f74163:sub|34   ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.270      ;
+; 1.021 ; 74163:inst|f74163:sub|111  ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.287      ;
+; 1.091 ; 74163:inst|f74163:sub|122  ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.357      ;
+; 1.091 ; 74163:inst|f74163:sub|122  ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.357      ;
+; 1.095 ; 74163:inst|f74163:sub|122  ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.361      ;
+; 1.108 ; 74163:inst1|f74163:sub|122 ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.374      ;
+; 1.109 ; 74163:inst1|f74163:sub|122 ; 74163:inst|f74163:sub|111  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.375      ;
+; 1.112 ; 74163:inst1|f74163:sub|122 ; 74163:inst|f74163:sub|34   ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.378      ;
+; 1.231 ; 74163:inst|f74163:sub|134  ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.497      ;
+; 1.231 ; 74163:inst|f74163:sub|134  ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.497      ;
+; 1.232 ; 74163:inst|f74163:sub|134  ; 74163:inst|f74163:sub|111  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.498      ;
+; 1.234 ; 74163:inst|f74163:sub|34   ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.500      ;
+; 1.235 ; 74163:inst|f74163:sub|134  ; 74163:inst|f74163:sub|34   ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.501      ;
+; 1.237 ; 74163:inst1|f74163:sub|111 ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.503      ;
+; 1.253 ; 74163:inst|f74163:sub|34   ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.519      ;
+; 1.253 ; 74163:inst|f74163:sub|34   ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.519      ;
+; 1.257 ; 74163:inst|f74163:sub|34   ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.523      ;
+; 1.258 ; 74163:inst|f74163:sub|134  ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.524      ;
+; 1.274 ; 74163:inst|f74163:sub|111  ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.540      ;
+; 1.345 ; 74163:inst1|f74163:sub|122 ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.611      ;
+; 1.346 ; 74163:inst1|f74163:sub|122 ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.612      ;
+; 1.360 ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.626      ;
+; 1.378 ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.644      ;
+; 1.405 ; 74163:inst|f74163:sub|122  ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.671      ;
+; 1.567 ; 74163:inst|f74163:sub|34   ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 1.833      ;
++-------+----------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'pin_name2'                                                                     ;
++--------+--------------+----------------+------------------+-----------+------------+----------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock     ; Clock Edge ; Target                     ;
++--------+--------------+----------------+------------------+-----------+------------+----------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; pin_name2 ; Rise       ; pin_name2                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name2 ; Rise       ; 74163:inst1|f74163:sub|111 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; 74163:inst1|f74163:sub|111 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name2 ; Rise       ; 74163:inst1|f74163:sub|122 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; 74163:inst1|f74163:sub|122 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name2 ; Rise       ; 74163:inst1|f74163:sub|34  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; 74163:inst1|f74163:sub|34  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name2 ; Rise       ; 74163:inst|f74163:sub|111  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; 74163:inst|f74163:sub|111  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name2 ; Rise       ; 74163:inst|f74163:sub|122  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; 74163:inst|f74163:sub|122  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name2 ; Rise       ; 74163:inst|f74163:sub|134  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; 74163:inst|f74163:sub|134  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name2 ; Rise       ; 74163:inst|f74163:sub|34   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; 74163:inst|f74163:sub|34   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name2 ; Rise       ; inst1|sub|111|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; inst1|sub|111|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name2 ; Rise       ; inst1|sub|122|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; inst1|sub|122|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name2 ; Rise       ; inst1|sub|34|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; inst1|sub|34|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name2 ; Rise       ; inst|sub|111|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; inst|sub|111|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name2 ; Rise       ; inst|sub|122|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; inst|sub|122|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name2 ; Rise       ; inst|sub|134|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; inst|sub|134|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name2 ; Rise       ; inst|sub|34|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; inst|sub|34|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name2 ; Rise       ; pin_name2|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; pin_name2|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name2 ; Rise       ; pin_name2~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; pin_name2~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name2 ; Rise       ; pin_name2~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; pin_name2~clkctrl|outclk   ;
++--------+--------------+----------------+------------------+-----------+------------+----------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; pin_name1 ; pin_name2  ; 1.087 ; 1.087 ; Rise       ; pin_name2       ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; pin_name1 ; pin_name2  ; -0.149 ; -0.149 ; Rise       ; pin_name2       ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; pin_name3 ; pin_name2  ; 6.423 ; 6.423 ; Rise       ; pin_name2       ;
+; pin_name4 ; pin_name2  ; 6.589 ; 6.589 ; Rise       ; pin_name2       ;
+; pin_name5 ; pin_name2  ; 6.433 ; 6.433 ; Rise       ; pin_name2       ;
+; pin_name6 ; pin_name2  ; 6.526 ; 6.526 ; Rise       ; pin_name2       ;
+; pin_name7 ; pin_name2  ; 6.287 ; 6.287 ; Rise       ; pin_name2       ;
+; pin_name8 ; pin_name2  ; 6.299 ; 6.299 ; Rise       ; pin_name2       ;
+; pin_name9 ; pin_name2  ; 6.511 ; 6.511 ; Rise       ; pin_name2       ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; pin_name3 ; pin_name2  ; 6.423 ; 6.423 ; Rise       ; pin_name2       ;
+; pin_name4 ; pin_name2  ; 6.589 ; 6.589 ; Rise       ; pin_name2       ;
+; pin_name5 ; pin_name2  ; 6.433 ; 6.433 ; Rise       ; pin_name2       ;
+; pin_name6 ; pin_name2  ; 6.526 ; 6.526 ; Rise       ; pin_name2       ;
+; pin_name7 ; pin_name2  ; 6.287 ; 6.287 ; Rise       ; pin_name2       ;
+; pin_name8 ; pin_name2  ; 6.299 ; 6.299 ; Rise       ; pin_name2       ;
+; pin_name9 ; pin_name2  ; 6.511 ; 6.511 ; Rise       ; pin_name2       ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------+
+; Fast Model Setup Summary          ;
++-----------+-------+---------------+
+; Clock     ; Slack ; End Point TNS ;
++-----------+-------+---------------+
+; pin_name2 ; 0.167 ; 0.000         ;
++-----------+-------+---------------+
+
+
++-----------------------------------+
+; Fast Model Hold Summary           ;
++-----------+-------+---------------+
+; Clock     ; Slack ; End Point TNS ;
++-----------+-------+---------------+
+; pin_name2 ; 0.215 ; 0.000         ;
++-----------+-------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++-----------+--------+-------------------+
+; Clock     ; Slack  ; End Point TNS     ;
++-----------+--------+-------------------+
+; pin_name2 ; -1.380 ; -8.380            ;
++-----------+--------+-------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'pin_name2'                                                                                                         ;
++-------+----------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                  ; To Node                    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+; 0.167 ; 74163:inst|f74163:sub|34   ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.865      ;
+; 0.193 ; 74163:inst|f74163:sub|134  ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.839      ;
+; 0.194 ; 74163:inst|f74163:sub|134  ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.838      ;
+; 0.196 ; 74163:inst1|f74163:sub|111 ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.836      ;
+; 0.233 ; 74163:inst|f74163:sub|122  ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.799      ;
+; 0.246 ; 74163:inst1|f74163:sub|122 ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.786      ;
+; 0.247 ; 74163:inst1|f74163:sub|122 ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.785      ;
+; 0.282 ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.750      ;
+; 0.284 ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.748      ;
+; 0.304 ; 74163:inst1|f74163:sub|111 ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.728      ;
+; 0.305 ; 74163:inst|f74163:sub|34   ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.727      ;
+; 0.305 ; 74163:inst1|f74163:sub|111 ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.727      ;
+; 0.305 ; 74163:inst|f74163:sub|134  ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.727      ;
+; 0.309 ; 74163:inst|f74163:sub|111  ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.723      ;
+; 0.309 ; 74163:inst|f74163:sub|34   ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.723      ;
+; 0.310 ; 74163:inst|f74163:sub|34   ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.722      ;
+; 0.313 ; 74163:inst|f74163:sub|134  ; 74163:inst|f74163:sub|34   ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.719      ;
+; 0.316 ; 74163:inst|f74163:sub|134  ; 74163:inst|f74163:sub|111  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.716      ;
+; 0.316 ; 74163:inst|f74163:sub|134  ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.716      ;
+; 0.329 ; 74163:inst|f74163:sub|34   ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.703      ;
+; 0.366 ; 74163:inst1|f74163:sub|122 ; 74163:inst|f74163:sub|34   ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.666      ;
+; 0.369 ; 74163:inst1|f74163:sub|122 ; 74163:inst|f74163:sub|111  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.663      ;
+; 0.369 ; 74163:inst1|f74163:sub|122 ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.663      ;
+; 0.369 ; 74163:inst1|f74163:sub|122 ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.663      ;
+; 0.371 ; 74163:inst|f74163:sub|122  ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.661      ;
+; 0.375 ; 74163:inst|f74163:sub|122  ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.657      ;
+; 0.376 ; 74163:inst|f74163:sub|122  ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.656      ;
+; 0.418 ; 74163:inst|f74163:sub|111  ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.614      ;
+; 0.424 ; 74163:inst1|f74163:sub|111 ; 74163:inst|f74163:sub|34   ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.608      ;
+; 0.427 ; 74163:inst1|f74163:sub|111 ; 74163:inst|f74163:sub|111  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.605      ;
+; 0.427 ; 74163:inst1|f74163:sub|111 ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.605      ;
+; 0.438 ; 74163:inst1|f74163:sub|111 ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.594      ;
+; 0.447 ; 74163:inst|f74163:sub|111  ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.585      ;
+; 0.451 ; 74163:inst|f74163:sub|111  ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.581      ;
+; 0.452 ; 74163:inst|f74163:sub|111  ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.580      ;
+; 0.487 ; 74163:inst|f74163:sub|34   ; 74163:inst|f74163:sub|111  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.545      ;
+; 0.501 ; 74163:inst1|f74163:sub|122 ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.531      ;
+; 0.665 ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; 74163:inst|f74163:sub|134  ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; 74163:inst|f74163:sub|34   ; 74163:inst|f74163:sub|34   ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; 74163:inst|f74163:sub|111  ; 74163:inst|f74163:sub|111  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; 74163:inst|f74163:sub|122  ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 1.000        ; 0.000      ; 0.367      ;
++-------+----------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'pin_name2'                                                                                                          ;
++-------+----------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                  ; To Node                    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+; 0.215 ; 74163:inst|f74163:sub|111  ; 74163:inst|f74163:sub|111  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; 74163:inst|f74163:sub|122  ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; 74163:inst1|f74163:sub|122 ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; 74163:inst|f74163:sub|134  ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; 74163:inst1|f74163:sub|111 ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; 74163:inst|f74163:sub|34   ; 74163:inst|f74163:sub|34   ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.367      ;
+; 0.379 ; 74163:inst1|f74163:sub|122 ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.531      ;
+; 0.393 ; 74163:inst|f74163:sub|34   ; 74163:inst|f74163:sub|111  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.545      ;
+; 0.428 ; 74163:inst|f74163:sub|111  ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.580      ;
+; 0.429 ; 74163:inst|f74163:sub|111  ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.581      ;
+; 0.433 ; 74163:inst|f74163:sub|111  ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.585      ;
+; 0.442 ; 74163:inst1|f74163:sub|111 ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.594      ;
+; 0.444 ; 74163:inst|f74163:sub|134  ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.596      ;
+; 0.453 ; 74163:inst1|f74163:sub|111 ; 74163:inst|f74163:sub|111  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.605      ;
+; 0.453 ; 74163:inst1|f74163:sub|111 ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.605      ;
+; 0.453 ; 74163:inst1|f74163:sub|111 ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.605      ;
+; 0.456 ; 74163:inst1|f74163:sub|111 ; 74163:inst|f74163:sub|34   ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.608      ;
+; 0.462 ; 74163:inst|f74163:sub|111  ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.614      ;
+; 0.504 ; 74163:inst|f74163:sub|122  ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.656      ;
+; 0.505 ; 74163:inst|f74163:sub|122  ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.657      ;
+; 0.509 ; 74163:inst|f74163:sub|122  ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.661      ;
+; 0.511 ; 74163:inst1|f74163:sub|122 ; 74163:inst|f74163:sub|111  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.663      ;
+; 0.511 ; 74163:inst1|f74163:sub|122 ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.663      ;
+; 0.514 ; 74163:inst1|f74163:sub|122 ; 74163:inst|f74163:sub|34   ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.666      ;
+; 0.551 ; 74163:inst|f74163:sub|34   ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.703      ;
+; 0.564 ; 74163:inst|f74163:sub|134  ; 74163:inst|f74163:sub|111  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.716      ;
+; 0.564 ; 74163:inst|f74163:sub|134  ; 74163:inst|f74163:sub|122  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.716      ;
+; 0.564 ; 74163:inst|f74163:sub|134  ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.716      ;
+; 0.567 ; 74163:inst|f74163:sub|134  ; 74163:inst|f74163:sub|34   ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.719      ;
+; 0.570 ; 74163:inst|f74163:sub|34   ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.722      ;
+; 0.571 ; 74163:inst|f74163:sub|111  ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.723      ;
+; 0.571 ; 74163:inst|f74163:sub|34   ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.723      ;
+; 0.573 ; 74163:inst|f74163:sub|134  ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.725      ;
+; 0.575 ; 74163:inst1|f74163:sub|111 ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.727      ;
+; 0.575 ; 74163:inst|f74163:sub|34   ; 74163:inst|f74163:sub|134  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.727      ;
+; 0.596 ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.748      ;
+; 0.598 ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.750      ;
+; 0.633 ; 74163:inst1|f74163:sub|122 ; 74163:inst1|f74163:sub|34  ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.785      ;
+; 0.634 ; 74163:inst1|f74163:sub|122 ; 74163:inst1|f74163:sub|111 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.786      ;
+; 0.647 ; 74163:inst|f74163:sub|122  ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.799      ;
+; 0.713 ; 74163:inst|f74163:sub|34   ; 74163:inst1|f74163:sub|122 ; pin_name2    ; pin_name2   ; 0.000        ; 0.000      ; 0.865      ;
++-------+----------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'pin_name2'                                                                     ;
++--------+--------------+----------------+------------------+-----------+------------+----------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock     ; Clock Edge ; Target                     ;
++--------+--------------+----------------+------------------+-----------+------------+----------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; pin_name2 ; Rise       ; pin_name2                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name2 ; Rise       ; 74163:inst1|f74163:sub|111 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; 74163:inst1|f74163:sub|111 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name2 ; Rise       ; 74163:inst1|f74163:sub|122 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; 74163:inst1|f74163:sub|122 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name2 ; Rise       ; 74163:inst1|f74163:sub|34  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; 74163:inst1|f74163:sub|34  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name2 ; Rise       ; 74163:inst|f74163:sub|111  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; 74163:inst|f74163:sub|111  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name2 ; Rise       ; 74163:inst|f74163:sub|122  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; 74163:inst|f74163:sub|122  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name2 ; Rise       ; 74163:inst|f74163:sub|134  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; 74163:inst|f74163:sub|134  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; pin_name2 ; Rise       ; 74163:inst|f74163:sub|34   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; 74163:inst|f74163:sub|34   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name2 ; Rise       ; inst1|sub|111|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; inst1|sub|111|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name2 ; Rise       ; inst1|sub|122|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; inst1|sub|122|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name2 ; Rise       ; inst1|sub|34|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; inst1|sub|34|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name2 ; Rise       ; inst|sub|111|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; inst|sub|111|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name2 ; Rise       ; inst|sub|122|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; inst|sub|122|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name2 ; Rise       ; inst|sub|134|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; inst|sub|134|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name2 ; Rise       ; inst|sub|34|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; inst|sub|34|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name2 ; Rise       ; pin_name2|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; pin_name2|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name2 ; Rise       ; pin_name2~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; pin_name2~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; pin_name2 ; Rise       ; pin_name2~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; pin_name2 ; Rise       ; pin_name2~clkctrl|outclk   ;
++--------+--------------+----------------+------------------+-----------+------------+----------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; pin_name1 ; pin_name2  ; 0.171 ; 0.171 ; Rise       ; pin_name2       ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Hold Times                                                            ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; pin_name1 ; pin_name2  ; 0.271 ; 0.271 ; Rise       ; pin_name2       ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; pin_name3 ; pin_name2  ; 3.706 ; 3.706 ; Rise       ; pin_name2       ;
+; pin_name4 ; pin_name2  ; 3.745 ; 3.745 ; Rise       ; pin_name2       ;
+; pin_name5 ; pin_name2  ; 3.716 ; 3.716 ; Rise       ; pin_name2       ;
+; pin_name6 ; pin_name2  ; 3.700 ; 3.700 ; Rise       ; pin_name2       ;
+; pin_name7 ; pin_name2  ; 3.606 ; 3.606 ; Rise       ; pin_name2       ;
+; pin_name8 ; pin_name2  ; 3.610 ; 3.610 ; Rise       ; pin_name2       ;
+; pin_name9 ; pin_name2  ; 3.694 ; 3.694 ; Rise       ; pin_name2       ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; pin_name3 ; pin_name2  ; 3.706 ; 3.706 ; Rise       ; pin_name2       ;
+; pin_name4 ; pin_name2  ; 3.745 ; 3.745 ; Rise       ; pin_name2       ;
+; pin_name5 ; pin_name2  ; 3.716 ; 3.716 ; Rise       ; pin_name2       ;
+; pin_name6 ; pin_name2  ; 3.700 ; 3.700 ; Rise       ; pin_name2       ;
+; pin_name7 ; pin_name2  ; 3.606 ; 3.606 ; Rise       ; pin_name2       ;
+; pin_name8 ; pin_name2  ; 3.610 ; 3.610 ; Rise       ; pin_name2       ;
+; pin_name9 ; pin_name2  ; 3.694 ; 3.694 ; Rise       ; pin_name2       ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                          ;
++------------------+--------+-------+----------+---------+---------------------+
+; Clock            ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+--------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -0.797 ; 0.215 ; N/A      ; N/A     ; -1.380              ;
+;  pin_name2       ; -0.797 ; 0.215 ; N/A      ; N/A     ; -1.380              ;
+; Design-wide TNS  ; -4.072 ; 0.0   ; 0.0      ; 0.0     ; -8.38               ;
+;  pin_name2       ; -4.072 ; 0.000 ; N/A      ; N/A     ; -8.380              ;
++------------------+--------+-------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; pin_name1 ; pin_name2  ; 1.087 ; 1.087 ; Rise       ; pin_name2       ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Hold Times                                                            ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; pin_name1 ; pin_name2  ; 0.271 ; 0.271 ; Rise       ; pin_name2       ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; pin_name3 ; pin_name2  ; 6.423 ; 6.423 ; Rise       ; pin_name2       ;
+; pin_name4 ; pin_name2  ; 6.589 ; 6.589 ; Rise       ; pin_name2       ;
+; pin_name5 ; pin_name2  ; 6.433 ; 6.433 ; Rise       ; pin_name2       ;
+; pin_name6 ; pin_name2  ; 6.526 ; 6.526 ; Rise       ; pin_name2       ;
+; pin_name7 ; pin_name2  ; 6.287 ; 6.287 ; Rise       ; pin_name2       ;
+; pin_name8 ; pin_name2  ; 6.299 ; 6.299 ; Rise       ; pin_name2       ;
+; pin_name9 ; pin_name2  ; 6.511 ; 6.511 ; Rise       ; pin_name2       ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; pin_name3 ; pin_name2  ; 3.706 ; 3.706 ; Rise       ; pin_name2       ;
+; pin_name4 ; pin_name2  ; 3.745 ; 3.745 ; Rise       ; pin_name2       ;
+; pin_name5 ; pin_name2  ; 3.716 ; 3.716 ; Rise       ; pin_name2       ;
+; pin_name6 ; pin_name2  ; 3.700 ; 3.700 ; Rise       ; pin_name2       ;
+; pin_name7 ; pin_name2  ; 3.606 ; 3.606 ; Rise       ; pin_name2       ;
+; pin_name8 ; pin_name2  ; 3.610 ; 3.610 ; Rise       ; pin_name2       ;
+; pin_name9 ; pin_name2  ; 3.694 ; 3.694 ; Rise       ; pin_name2       ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------+
+; Setup Transfers                                                    ;
++------------+-----------+----------+----------+----------+----------+
+; From Clock ; To Clock  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+-----------+----------+----------+----------+----------+
+; pin_name2  ; pin_name2 ; 48       ; 0        ; 0        ; 0        ;
++------------+-----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++--------------------------------------------------------------------+
+; Hold Transfers                                                     ;
++------------+-----------+----------+----------+----------+----------+
+; From Clock ; To Clock  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+-----------+----------+----------+----------+----------+
+; pin_name2  ; pin_name2 ; 48       ; 0        ; 0        ; 0        ;
++------------+-----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 1     ; 1    ;
+; Unconstrained Input Port Paths  ; 7     ; 7    ;
+; Unconstrained Output Ports      ; 7     ; 7    ;
+; Unconstrained Output Port Paths ; 7     ; 7    ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Dec 14 21:52:32 2016
+Info: Command: quartus_sta licznik74163 -c licznik74163
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'licznik74163.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name pin_name2 pin_name2
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -0.797
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.797        -4.072 pin_name2 
+Info (332146): Worst-case hold slack is 0.391
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.391         0.000 pin_name2 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380        -8.380 pin_name2 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332146): Worst-case setup slack is 0.167
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.167         0.000 pin_name2 
+Info (332146): Worst-case hold slack is 0.215
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.215         0.000 pin_name2 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380        -8.380 pin_name2 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 433 megabytes
+    Info: Processing ended: Wed Dec 14 21:52:33 2016
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
