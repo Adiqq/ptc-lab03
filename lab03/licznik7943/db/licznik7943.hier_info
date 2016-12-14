@@ -1,0 +1,34 @@
+|licznik7943
+pin_name2 <= 7493:inst.QA
+pin_name1 => 7493:inst.CLKA
+pin_name3 <= 7493:inst.QB
+pin_name4 <= 7493:inst.QC
+pin_name5 <= 7493:inst.QD
+pin_name6 <= 7493:inst1.QA
+pin_name7 <= 7493:inst1.QB
+pin_name8 <= 7493:inst1.QC
+pin_name9 <= 7493:inst1.QD
+
+
+|licznik7943|7493:inst
+QD <= 13.DB_MAX_OUTPUT_PORT_TYPE
+RO1 => 1.IN0
+RO2 => 1.IN1
+CLKB => 44.IN0
+QC <= 14.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 15.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 16.DB_MAX_OUTPUT_PORT_TYPE
+CLKA => 43.IN0
+
+
+|licznik7943|7493:inst1
+QD <= 13.DB_MAX_OUTPUT_PORT_TYPE
+RO1 => 1.IN0
+RO2 => 1.IN1
+CLKB => 44.IN0
+QC <= 14.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 15.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 16.DB_MAX_OUTPUT_PORT_TYPE
+CLKA => 43.IN0
+
+
