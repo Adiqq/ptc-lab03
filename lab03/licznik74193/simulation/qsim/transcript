@@ -24,13 +24,19 @@
 # Loading cycloneii_ver.cycloneii_lcell_ff
 # Loading work.licznik74193_vlg_sample_tst
 # Loading work.licznik74193_vlg_check_tst
-# SDF 10.1d Compiler 2012.11 Nov  2 2012
-# 
-# Loading instances from licznik74193_v.sdo
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
-# Loading timing data from licznik74193_v.sdo
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /licznik74193_vlg_vec_tst File: licznik74193.vt
-# Simulation passed !
-# ** Note: $finish    : licznik74193.vt(349)
+# ERROR! Vector Mismatch for output port pin_name3 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = x
+# ERROR! Vector Mismatch for output port pin_name6 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = x
+# ERROR! Vector Mismatch for output port pin_name8 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = x
+# ERROR! Vector Mismatch for output port pin_name9 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = x
+#           4 mismatched vectors : Simulation failed !
+# ** Note: $finish    : licznik74193.vt(319)
 #    Time: 10 us  Iteration: 0  Instance: /licznik74193_vlg_vec_tst/tb_out
