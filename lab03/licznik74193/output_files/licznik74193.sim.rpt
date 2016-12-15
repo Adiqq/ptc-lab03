@@ -1,5 +1,5 @@
 Simulator report for licznik74193
-Thu Dec 15 23:05:53 2016
+Fri Dec 16 00:28:42 2016
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -45,9 +45,9 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 10.0 us      ;
-; Simulation Netlist Size     ; 53 nodes     ;
-; Simulation Coverage         ;       9.43 % ;
-; Total Number of Transitions ; 13173        ;
+; Simulation Netlist Size     ; 57 nodes     ;
+; Simulation Coverage         ;       8.77 % ;
+; Total Number of Transitions ; 13713        ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
 ; Device                      ; EP2C70F896C6 ;
@@ -95,28 +95,28 @@ Please use Quartus II 64-Bit to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;       9.43 % ;
-; Total nodes checked                                 ; 53           ;
-; Total output ports checked                          ; 53           ;
+; Total coverage as a percentage                      ;       8.77 % ;
+; Total nodes checked                                 ; 57           ;
+; Total output ports checked                          ; 57           ;
 ; Total output ports with complete 1/0-value coverage ; 5            ;
-; Total output ports with no 1/0-value coverage       ; 31           ;
-; Total output ports with no 1-value coverage         ; 42           ;
-; Total output ports with no 0-value coverage         ; 37           ;
+; Total output ports with no 1/0-value coverage       ; 35           ;
+; Total output ports with no 1-value coverage         ; 46           ;
+; Total output ports with no 0-value coverage         ; 41           ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+---------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                     ;
-+-----------------------------+--------------------------------+------------------+
-; Node Name                   ; Output Port Name               ; Output Port Type ;
-+-----------------------------+--------------------------------+------------------+
-; |licznik74193|inst3         ; |licznik74193|inst3            ; combout          ;
-; |licznik74193|inst4         ; |licznik74193|inst4            ; combout          ;
-; |licznik74193|74193:inst|94 ; |licznik74193|74193:inst|94    ; combout          ;
-; |licznik74193|pin_name2     ; |licznik74193|pin_name2~corein ; combout          ;
-; |licznik74193|pin_name1     ; |licznik74193|pin_name1~corein ; combout          ;
-+-----------------------------+--------------------------------+------------------+
++------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                  ;
++-----------------------------+-----------------------------+------------------+
+; Node Name                   ; Output Port Name            ; Output Port Type ;
++-----------------------------+-----------------------------+------------------+
+; |licznik74193|inst3         ; |licznik74193|inst3         ; combout          ;
+; |licznik74193|inst4         ; |licznik74193|inst4         ; combout          ;
+; |licznik74193|74193:inst|94 ; |licznik74193|74193:inst|94 ; combout          ;
+; |licznik74193|KEY[0]        ; |licznik74193|KEY[0]~corein ; combout          ;
+; |licznik74193|SW[0]         ; |licznik74193|SW[0]~corein  ; combout          ;
++-----------------------------+-----------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
@@ -125,48 +125,52 @@ The following table displays output ports that do not toggle to 1 during simulat
 +----------------------------------------+----------------------------------------+------------------+
 ; Node Name                              ; Output Port Name                       ; Output Port Type ;
 +----------------------------------------+----------------------------------------+------------------+
-; |licznik74193|74193:inst|25            ; |licznik74193|74193:inst|25            ; regout           ;
-; |licznik74193|74193:inst|24            ; |licznik74193|74193:inst|24            ; regout           ;
 ; |licznik74193|74193:inst1|26           ; |licznik74193|74193:inst1|26           ; regout           ;
-; |licznik74193|74193:inst|26~_emulated  ; |licznik74193|74193:inst|26~_emulated  ; regout           ;
-; |licznik74193|74193:inst|26~2          ; |licznik74193|74193:inst|26~2          ; combout          ;
-; |licznik74193|74193:inst|86            ; |licznik74193|74193:inst|86            ; combout          ;
-; |licznik74193|74193:inst|23~_emulated  ; |licznik74193|74193:inst|23~_emulated  ; regout           ;
-; |licznik74193|74193:inst|23~0          ; |licznik74193|74193:inst|23~0          ; combout          ;
+; |licznik74193|74193:inst|24            ; |licznik74193|74193:inst|24            ; regout           ;
+; |licznik74193|74193:inst|25            ; |licznik74193|74193:inst|25            ; regout           ;
+; |licznik74193|74193:inst1|24~_emulated ; |licznik74193|74193:inst1|24~_emulated ; regout           ;
+; |licznik74193|74193:inst1|24~2         ; |licznik74193|74193:inst1|24~2         ; combout          ;
 ; |licznik74193|74193:inst1|25~_emulated ; |licznik74193|74193:inst1|25~_emulated ; regout           ;
 ; |licznik74193|74193:inst1|25~0         ; |licznik74193|74193:inst1|25~0         ; combout          ;
-; |licznik74193|74193:inst1|24~_emulated ; |licznik74193|74193:inst1|24~_emulated ; regout           ;
-; |licznik74193|74193:inst1|24~0         ; |licznik74193|74193:inst1|24~0         ; combout          ;
-; |licznik74193|74193:inst|26~3          ; |licznik74193|74193:inst|26~3          ; combout          ;
+; |licznik74193|74193:inst1|85           ; |licznik74193|74193:inst1|85           ; combout          ;
+; |licznik74193|74193:inst|23~_emulated  ; |licznik74193|74193:inst|23~_emulated  ; regout           ;
+; |licznik74193|74193:inst|23~0          ; |licznik74193|74193:inst|23~0          ; combout          ;
+; |licznik74193|74193:inst|26~_emulated  ; |licznik74193|74193:inst|26~_emulated  ; regout           ;
 ; |licznik74193|74193:inst|26~0          ; |licznik74193|74193:inst|26~0          ; combout          ;
-; |licznik74193|74193:inst|50~0          ; |licznik74193|74193:inst|50~0          ; combout          ;
-; |licznik74193|74193:inst1|22~0         ; |licznik74193|74193:inst1|22~0         ; combout          ;
-; |licznik74193|74193:inst1|22~1         ; |licznik74193|74193:inst1|22~1         ; combout          ;
+; |licznik74193|74193:inst1|24~3         ; |licznik74193|74193:inst1|24~3         ; combout          ;
+; |licznik74193|74193:inst1|24~0         ; |licznik74193|74193:inst1|24~0         ; combout          ;
+; |licznik74193|74193:inst1|50~0         ; |licznik74193|74193:inst1|50~0         ; combout          ;
+; |licznik74193|74193:inst1|50~1         ; |licznik74193|74193:inst1|50~1         ; combout          ;
 ; |licznik74193|74193:inst1|23           ; |licznik74193|74193:inst1|23           ; regout           ;
 ; |licznik74193|74193:inst1|28           ; |licznik74193|74193:inst1|28           ; combout          ;
 ; |licznik74193|inst10~0                 ; |licznik74193|inst10~0                 ; combout          ;
 ; |licznik74193|inst10                   ; |licznik74193|inst10                   ; combout          ;
-; |licznik74193|74193:inst|93            ; |licznik74193|74193:inst|93            ; combout          ;
-; |licznik74193|74193:inst|23~1          ; |licznik74193|74193:inst|23~1          ; combout          ;
-; |licznik74193|74193:inst|28            ; |licznik74193|74193:inst|28            ; combout          ;
-; |licznik74193|74193:inst|27            ; |licznik74193|74193:inst|27            ; combout          ;
 ; |licznik74193|74193:inst1|25~1         ; |licznik74193|74193:inst1|25~1         ; combout          ;
-; |licznik74193|74193:inst1|24~1         ; |licznik74193|74193:inst1|24~1         ; combout          ;
-; |licznik74193|74193:inst1|93           ; |licznik74193|74193:inst1|93           ; combout          ;
+; |licznik74193|74193:inst|21~0          ; |licznik74193|74193:inst|21~0          ; combout          ;
+; |licznik74193|74193:inst|22~0          ; |licznik74193|74193:inst|22~0          ; combout          ;
+; |licznik74193|74193:inst|23~1          ; |licznik74193|74193:inst|23~1          ; combout          ;
+; |licznik74193|74193:inst|93            ; |licznik74193|74193:inst|93            ; combout          ;
+; |licznik74193|74193:inst|26~1          ; |licznik74193|74193:inst|26~1          ; combout          ;
 ; |licznik74193|74193:inst1|51~0         ; |licznik74193|74193:inst1|51~0         ; combout          ;
-; |licznik74193|74193:inst|25~0          ; |licznik74193|74193:inst|25~0          ; combout          ;
-; |licznik74193|74193:inst|24~0          ; |licznik74193|74193:inst|24~0          ; combout          ;
+; |licznik74193|74193:inst1|51~1         ; |licznik74193|74193:inst1|51~1         ; combout          ;
+; |licznik74193|74193:inst|28~0          ; |licznik74193|74193:inst|28~0          ; combout          ;
+; |licznik74193|74193:inst|28            ; |licznik74193|74193:inst|28            ; combout          ;
+; |licznik74193|74193:inst|27~0          ; |licznik74193|74193:inst|27~0          ; combout          ;
+; |licznik74193|74193:inst|27            ; |licznik74193|74193:inst|27            ; combout          ;
+; |licznik74193|74193:inst1|93           ; |licznik74193|74193:inst1|93           ; combout          ;
 ; |licznik74193|74193:inst1|26~0         ; |licznik74193|74193:inst1|26~0         ; combout          ;
+; |licznik74193|74193:inst|24~0          ; |licznik74193|74193:inst|24~0          ; combout          ;
+; |licznik74193|74193:inst|25~0          ; |licznik74193|74193:inst|25~0          ; combout          ;
 ; |licznik74193|dff2:inst2|3~0           ; |licznik74193|dff2:inst2|3~0           ; combout          ;
 ; |licznik74193|74193:inst1|23~0         ; |licznik74193|74193:inst1|23~0         ; combout          ;
-; |licznik74193|74193:inst|26~1          ; |licznik74193|74193:inst|26~1          ; combout          ;
-; |licznik74193|pin_name3                ; |licznik74193|pin_name3                ; padio            ;
-; |licznik74193|pin_name4                ; |licznik74193|pin_name4                ; padio            ;
-; |licznik74193|pin_name5                ; |licznik74193|pin_name5                ; padio            ;
-; |licznik74193|pin_name6                ; |licznik74193|pin_name6                ; padio            ;
-; |licznik74193|pin_name7                ; |licznik74193|pin_name7                ; padio            ;
-; |licznik74193|pin_name8                ; |licznik74193|pin_name8                ; padio            ;
-; |licznik74193|pin_name9                ; |licznik74193|pin_name9                ; padio            ;
+; |licznik74193|74193:inst1|24~1         ; |licznik74193|74193:inst1|24~1         ; combout          ;
+; |licznik74193|OLEDR[6]                 ; |licznik74193|OLEDR[6]                 ; padio            ;
+; |licznik74193|OLEDR[5]                 ; |licznik74193|OLEDR[5]                 ; padio            ;
+; |licznik74193|OLEDR[4]                 ; |licznik74193|OLEDR[4]                 ; padio            ;
+; |licznik74193|OLEDR[3]                 ; |licznik74193|OLEDR[3]                 ; padio            ;
+; |licznik74193|OLEDR[2]                 ; |licznik74193|OLEDR[2]                 ; padio            ;
+; |licznik74193|OLEDR[1]                 ; |licznik74193|OLEDR[1]                 ; padio            ;
+; |licznik74193|OLEDR[0]                 ; |licznik74193|OLEDR[0]                 ; padio            ;
 +----------------------------------------+----------------------------------------+------------------+
 
 
@@ -176,43 +180,47 @@ The following table displays output ports that do not toggle to 0 during simulat
 +----------------------------------------+----------------------------------------+------------------+
 ; Node Name                              ; Output Port Name                       ; Output Port Type ;
 +----------------------------------------+----------------------------------------+------------------+
-; |licznik74193|74193:inst|25            ; |licznik74193|74193:inst|25            ; regout           ;
-; |licznik74193|74193:inst|24            ; |licznik74193|74193:inst|24            ; regout           ;
 ; |licznik74193|74193:inst1|26           ; |licznik74193|74193:inst1|26           ; regout           ;
-; |licznik74193|74193:inst|26~_emulated  ; |licznik74193|74193:inst|26~_emulated  ; regout           ;
-; |licznik74193|74193:inst|26~2          ; |licznik74193|74193:inst|26~2          ; combout          ;
-; |licznik74193|74193:inst|23~_emulated  ; |licznik74193|74193:inst|23~_emulated  ; regout           ;
-; |licznik74193|74193:inst|23~0          ; |licznik74193|74193:inst|23~0          ; combout          ;
+; |licznik74193|74193:inst|24            ; |licznik74193|74193:inst|24            ; regout           ;
+; |licznik74193|74193:inst|25            ; |licznik74193|74193:inst|25            ; regout           ;
+; |licznik74193|74193:inst1|24~_emulated ; |licznik74193|74193:inst1|24~_emulated ; regout           ;
+; |licznik74193|74193:inst1|24~2         ; |licznik74193|74193:inst1|24~2         ; combout          ;
 ; |licznik74193|74193:inst1|25~_emulated ; |licznik74193|74193:inst1|25~_emulated ; regout           ;
 ; |licznik74193|74193:inst1|25~0         ; |licznik74193|74193:inst1|25~0         ; combout          ;
-; |licznik74193|74193:inst1|24~_emulated ; |licznik74193|74193:inst1|24~_emulated ; regout           ;
-; |licznik74193|74193:inst1|24~0         ; |licznik74193|74193:inst1|24~0         ; combout          ;
-; |licznik74193|74193:inst|26~3          ; |licznik74193|74193:inst|26~3          ; combout          ;
+; |licznik74193|74193:inst|23~_emulated  ; |licznik74193|74193:inst|23~_emulated  ; regout           ;
+; |licznik74193|74193:inst|23~0          ; |licznik74193|74193:inst|23~0          ; combout          ;
+; |licznik74193|74193:inst|26~_emulated  ; |licznik74193|74193:inst|26~_emulated  ; regout           ;
+; |licznik74193|74193:inst|26~0          ; |licznik74193|74193:inst|26~0          ; combout          ;
+; |licznik74193|74193:inst1|24~3         ; |licznik74193|74193:inst1|24~3         ; combout          ;
 ; |licznik74193|dff2:inst2|3             ; |licznik74193|dff2:inst2|3             ; regout           ;
-; |licznik74193|74193:inst1|22~0         ; |licznik74193|74193:inst1|22~0         ; combout          ;
+; |licznik74193|74193:inst1|50~0         ; |licznik74193|74193:inst1|50~0         ; combout          ;
 ; |licznik74193|74193:inst1|23           ; |licznik74193|74193:inst1|23           ; regout           ;
-; |licznik74193|74193:inst|92            ; |licznik74193|74193:inst|92            ; combout          ;
-; |licznik74193|74193:inst|23~1          ; |licznik74193|74193:inst|23~1          ; combout          ;
-; |licznik74193|74193:inst|27            ; |licznik74193|74193:inst|27            ; combout          ;
 ; |licznik74193|74193:inst1|25~1         ; |licznik74193|74193:inst1|25~1         ; combout          ;
-; |licznik74193|74193:inst1|24~1         ; |licznik74193|74193:inst1|24~1         ; combout          ;
-; |licznik74193|74193:inst|91            ; |licznik74193|74193:inst|91            ; combout          ;
-; |licznik74193|74193:inst1|92           ; |licznik74193|74193:inst1|92           ; combout          ;
-; |licznik74193|74193:inst1|51~0         ; |licznik74193|74193:inst1|51~0         ; combout          ;
-; |licznik74193|74193:inst1|91           ; |licznik74193|74193:inst1|91           ; combout          ;
+; |licznik74193|74193:inst|21~0          ; |licznik74193|74193:inst|21~0          ; combout          ;
 ; |licznik74193|74193:inst1|94           ; |licznik74193|74193:inst1|94           ; combout          ;
-; |licznik74193|74193:inst|25~0          ; |licznik74193|74193:inst|25~0          ; combout          ;
-; |licznik74193|74193:inst|24~0          ; |licznik74193|74193:inst|24~0          ; combout          ;
-; |licznik74193|74193:inst1|26~0         ; |licznik74193|74193:inst1|26~0         ; combout          ;
-; |licznik74193|74193:inst1|23~0         ; |licznik74193|74193:inst1|23~0         ; combout          ;
+; |licznik74193|74193:inst|23~1          ; |licznik74193|74193:inst|23~1          ; combout          ;
+; |licznik74193|74193:inst|92            ; |licznik74193|74193:inst|92            ; combout          ;
 ; |licznik74193|74193:inst|26~1          ; |licznik74193|74193:inst|26~1          ; combout          ;
-; |licznik74193|pin_name3                ; |licznik74193|pin_name3                ; padio            ;
-; |licznik74193|pin_name4                ; |licznik74193|pin_name4                ; padio            ;
-; |licznik74193|pin_name5                ; |licznik74193|pin_name5                ; padio            ;
-; |licznik74193|pin_name6                ; |licznik74193|pin_name6                ; padio            ;
-; |licznik74193|pin_name7                ; |licznik74193|pin_name7                ; padio            ;
-; |licznik74193|pin_name8                ; |licznik74193|pin_name8                ; padio            ;
-; |licznik74193|pin_name9                ; |licznik74193|pin_name9                ; padio            ;
+; |licznik74193|74193:inst1|51~0         ; |licznik74193|74193:inst1|51~0         ; combout          ;
+; |licznik74193|74193:inst1|51~1         ; |licznik74193|74193:inst1|51~1         ; combout          ;
+; |licznik74193|74193:inst1|92           ; |licznik74193|74193:inst1|92           ; combout          ;
+; |licznik74193|74193:inst|28~0          ; |licznik74193|74193:inst|28~0          ; combout          ;
+; |licznik74193|74193:inst|27~0          ; |licznik74193|74193:inst|27~0          ; combout          ;
+; |licznik74193|74193:inst|27            ; |licznik74193|74193:inst|27            ; combout          ;
+; |licznik74193|74193:inst|91            ; |licznik74193|74193:inst|91            ; combout          ;
+; |licznik74193|74193:inst1|91           ; |licznik74193|74193:inst1|91           ; combout          ;
+; |licznik74193|74193:inst1|26~0         ; |licznik74193|74193:inst1|26~0         ; combout          ;
+; |licznik74193|74193:inst|24~0          ; |licznik74193|74193:inst|24~0          ; combout          ;
+; |licznik74193|74193:inst|25~0          ; |licznik74193|74193:inst|25~0          ; combout          ;
+; |licznik74193|74193:inst1|23~0         ; |licznik74193|74193:inst1|23~0         ; combout          ;
+; |licznik74193|74193:inst1|24~1         ; |licznik74193|74193:inst1|24~1         ; combout          ;
+; |licznik74193|OLEDR[6]                 ; |licznik74193|OLEDR[6]                 ; padio            ;
+; |licznik74193|OLEDR[5]                 ; |licznik74193|OLEDR[5]                 ; padio            ;
+; |licznik74193|OLEDR[4]                 ; |licznik74193|OLEDR[4]                 ; padio            ;
+; |licznik74193|OLEDR[3]                 ; |licznik74193|OLEDR[3]                 ; padio            ;
+; |licznik74193|OLEDR[2]                 ; |licznik74193|OLEDR[2]                 ; padio            ;
+; |licznik74193|OLEDR[1]                 ; |licznik74193|OLEDR[1]                 ; padio            ;
+; |licznik74193|OLEDR[0]                 ; |licznik74193|OLEDR[0]                 ; padio            ;
 +----------------------------------------+----------------------------------------+------------------+
 
 
@@ -229,19 +237,19 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Simulator
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Dec 15 23:05:53 2016
+    Info: Processing started: Fri Dec 16 00:28:41 2016
 Info: Command: quartus_sim --simulation_results_format=VWF licznik74193 -c licznik74193
 Info (324025): Using vector source file "E:/Projekty/PTC/lab03/licznik74193/Waveform.vwf"
 Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info (310002): Simulation partitioned into 1 sub-simulations
-Info (328053): Simulation coverage is       9.43 %
-Info (328052): Number of transitions in simulation is 13173
+Info (328053): Simulation coverage is       8.77 %
+Info (328052): Number of transitions in simulation is 13713
 Info (324045): Vector file licznik74193.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 364 megabytes
-    Info: Processing ended: Thu Dec 15 23:05:53 2016
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Fri Dec 16 00:28:42 2016
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 

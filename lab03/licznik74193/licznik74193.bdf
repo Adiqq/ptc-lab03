@@ -21,9 +21,9 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 128 384 296 400)
+	(rect 120 216 288 232)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "pin_name2" (rect 5 0 58 12)(font "Arial" ))
+	(text "SW[0]" (rect 5 0 36 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -37,25 +37,25 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 120 216 296 232)
-	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "pin_name1" (rect 9 0 62 12)(font "Arial" ))
-	(pt 176 8)
+	(rect 128 384 296 400)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "KEY[0]" (rect 5 0 41 12)(font "Arial" ))
+	(pt 168 8)
 	(drawing
-		(line (pt 92 12)(pt 117 12))
-		(line (pt 92 4)(pt 117 4))
-		(line (pt 121 8)(pt 176 8))
-		(line (pt 92 12)(pt 92 4))
-		(line (pt 117 4)(pt 121 8))
-		(line (pt 117 12)(pt 121 8))
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
 	)
-	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(output)
 	(rect 680 488 696 664)
 	(text "OUTPUT" (rect 6 1 16 39)(font "Arial" (font_size 6))(vertical))
-	(text "pin_name3" (rect 4 90 16 143)(font "Arial" )(vertical))
+	(text "OLEDR[0]" (rect 4 90 16 140)(font "Arial" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 8 0)(pt 8 52))
@@ -72,7 +72,7 @@ applicable agreement for further details.
 	(output)
 	(rect 704 488 720 664)
 	(text "OUTPUT" (rect 6 1 16 39)(font "Arial" (font_size 6))(vertical))
-	(text "pin_name4" (rect 4 90 16 143)(font "Arial" )(vertical))
+	(text "OLEDR[1]" (rect 5 89 17 139)(font "Arial" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 8 0)(pt 8 52))
@@ -89,7 +89,7 @@ applicable agreement for further details.
 	(output)
 	(rect 728 488 744 664)
 	(text "OUTPUT" (rect 6 1 16 39)(font "Arial" (font_size 6))(vertical))
-	(text "pin_name5" (rect 4 90 16 143)(font "Arial" )(vertical))
+	(text "OLEDR[2]" (rect 5 89 17 139)(font "Arial" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 8 0)(pt 8 52))
@@ -106,7 +106,7 @@ applicable agreement for further details.
 	(output)
 	(rect 768 488 784 664)
 	(text "OUTPUT" (rect 6 1 16 39)(font "Arial" (font_size 6))(vertical))
-	(text "pin_name6" (rect 4 90 16 143)(font "Arial" )(vertical))
+	(text "OLEDR[3]" (rect 5 89 17 139)(font "Arial" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 8 0)(pt 8 52))
@@ -123,7 +123,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1056 496 1072 672)
 	(text "OUTPUT" (rect 6 1 16 39)(font "Arial" (font_size 6))(vertical))
-	(text "pin_name7" (rect 4 90 16 143)(font "Arial" )(vertical))
+	(text "OLEDR[4]" (rect 4 90 16 140)(font "Arial" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 8 0)(pt 8 52))
@@ -140,7 +140,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1080 496 1096 672)
 	(text "OUTPUT" (rect 6 1 16 39)(font "Arial" (font_size 6))(vertical))
-	(text "pin_name8" (rect 4 90 16 143)(font "Arial" )(vertical))
+	(text "OLEDR[5]" (rect 5 89 17 139)(font "Arial" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 8 0)(pt 8 52))
@@ -157,7 +157,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1104 496 1120 672)
 	(text "OUTPUT" (rect 6 1 16 39)(font "Arial" (font_size 6))(vertical))
-	(text "pin_name9" (rect 4 90 16 143)(font "Arial" )(vertical))
+	(text "OLEDR[6]" (rect 5 89 17 139)(font "Arial" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 8 0)(pt 8 52))
@@ -714,10 +714,6 @@ applicable agreement for further details.
 	(pt 320 392)
 )
 (connector
-	(pt 336 224)
-	(pt 296 224)
-)
-(connector
 	(pt 536 328)
 	(pt 560 328)
 )
@@ -740,10 +736,6 @@ applicable agreement for further details.
 (connector
 	(pt 344 232)
 	(pt 352 232)
-)
-(connector
-	(pt 336 224)
-	(pt 336 248)
 )
 (connector
 	(pt 336 248)
@@ -1030,6 +1022,14 @@ applicable agreement for further details.
 	(pt 840 296)
 	(pt 840 440)
 	(color 0 170 0)
+)
+(connector
+	(pt 336 248)
+	(pt 336 224)
+)
+(connector
+	(pt 288 224)
+	(pt 336 224)
 )
 (junction (pt 320 352))
 (junction (pt 1112 296))

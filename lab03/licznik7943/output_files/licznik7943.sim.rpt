@@ -1,5 +1,5 @@
 Simulator report for licznik7943
-Wed Dec 14 19:44:40 2016
+Fri Dec 16 00:19:15 2016
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -45,11 +45,12 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 10.0 us      ;
-; Simulation Netlist Size     ; 25 nodes     ;
-; Simulation Coverage         ;      92.00 % ;
-; Total Number of Transitions ; 3908         ;
+; Simulation Netlist Size     ; 27 nodes     ;
+; Simulation Coverage         ;      96.30 % ;
+; Total Number of Transitions ; 5490         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
+; Device                      ; EP2C70F896C6 ;
 +-----------------------------+--------------+
 
 
@@ -58,7 +59,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------------+------------------------------------------------+---------------+
 ; Option                                                                                     ; Setting                                        ; Default Value ;
 +--------------------------------------------------------------------------------------------+------------------------------------------------+---------------+
-; Simulation mode                                                                            ; Functional                                     ; Timing        ;
+; Simulation mode                                                                            ; Timing                                         ; Timing        ;
 ; Start time                                                                                 ; 0 ns                                           ; 0 ns          ;
 ; Simulation results format                                                                  ; VWF                                            ;               ;
 ; Vector input source                                                                        ; E:/Projekty/PTC/lab03/licznik7943/Waveform.vwf ;               ;
@@ -94,68 +95,69 @@ Please use Quartus II 64-Bit to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      92.00 % ;
-; Total nodes checked                                 ; 25           ;
-; Total output ports checked                          ; 25           ;
-; Total output ports with complete 1/0-value coverage ; 23           ;
-; Total output ports with no 1/0-value coverage       ; 2            ;
-; Total output ports with no 1-value coverage         ; 2            ;
-; Total output ports with no 0-value coverage         ; 2            ;
+; Total coverage as a percentage                      ;      96.30 % ;
+; Total nodes checked                                 ; 27           ;
+; Total output ports checked                          ; 27           ;
+; Total output ports with complete 1/0-value coverage ; 26           ;
+; Total output ports with no 1/0-value coverage       ; 1            ;
+; Total output ports with no 1-value coverage         ; 1            ;
+; Total output ports with no 0-value coverage         ; 1            ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+----------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                ;
-+----------------------------+----------------------------+------------------+
-; Node Name                  ; Output Port Name           ; Output Port Type ;
-+----------------------------+----------------------------+------------------+
-; |licznik7943|pin_name2     ; |licznik7943|pin_name2     ; pin_out          ;
-; |licznik7943|inst4         ; |licznik7943|inst4         ; out0             ;
-; |licznik7943|inst2         ; |licznik7943|inst2         ; out0             ;
-; |licznik7943|pin_name1     ; |licznik7943|pin_name1     ; out              ;
-; |licznik7943|pin_name3     ; |licznik7943|pin_name3     ; pin_out          ;
-; |licznik7943|pin_name4     ; |licznik7943|pin_name4     ; pin_out          ;
-; |licznik7943|pin_name5     ; |licznik7943|pin_name5     ; pin_out          ;
-; |licznik7943|pin_name6     ; |licznik7943|pin_name6     ; pin_out          ;
-; |licznik7943|pin_name7     ; |licznik7943|pin_name7     ; pin_out          ;
-; |licznik7943|pin_name8     ; |licznik7943|pin_name8     ; pin_out          ;
-; |licznik7943|7493:inst1|9  ; |licznik7943|7493:inst1|9  ; out0             ;
-; |licznik7943|7493:inst1|39 ; |licznik7943|7493:inst1|39 ; out0             ;
-; |licznik7943|7493:inst1|14 ; |licznik7943|7493:inst1|14 ; regout           ;
-; |licznik7943|7493:inst1|10 ; |licznik7943|7493:inst1|10 ; out0             ;
-; |licznik7943|7493:inst1|15 ; |licznik7943|7493:inst1|15 ; regout           ;
-; |licznik7943|7493:inst1|16 ; |licznik7943|7493:inst1|16 ; regout           ;
-; |licznik7943|7493:inst|13  ; |licznik7943|7493:inst|13  ; regout           ;
-; |licznik7943|7493:inst|9   ; |licznik7943|7493:inst|9   ; out0             ;
-; |licznik7943|7493:inst|39  ; |licznik7943|7493:inst|39  ; out0             ;
-; |licznik7943|7493:inst|14  ; |licznik7943|7493:inst|14  ; regout           ;
-; |licznik7943|7493:inst|10  ; |licznik7943|7493:inst|10  ; out0             ;
-; |licznik7943|7493:inst|15  ; |licznik7943|7493:inst|15  ; regout           ;
-; |licznik7943|7493:inst|16  ; |licznik7943|7493:inst|16  ; regout           ;
-+----------------------------+----------------------------+------------------+
++--------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                ;
++------------------------------------+------------------------------------+------------------+
+; Node Name                          ; Output Port Name                   ; Output Port Type ;
++------------------------------------+------------------------------------+------------------+
+; |licznik7943|7493:inst1|14         ; |licznik7943|7493:inst1|14         ; regout           ;
+; |licznik7943|7493:inst1|15         ; |licznik7943|7493:inst1|15         ; regout           ;
+; |licznik7943|7493:inst1|16         ; |licznik7943|7493:inst1|16         ; regout           ;
+; |licznik7943|7493:inst|13          ; |licznik7943|7493:inst|13          ; regout           ;
+; |licznik7943|7493:inst|14          ; |licznik7943|7493:inst|14          ; regout           ;
+; |licznik7943|7493:inst|15          ; |licznik7943|7493:inst|15          ; regout           ;
+; |licznik7943|7493:inst|16          ; |licznik7943|7493:inst|16          ; regout           ;
+; |licznik7943|7493:inst1|14~0       ; |licznik7943|7493:inst1|14~0       ; combout          ;
+; |licznik7943|inst4~0               ; |licznik7943|inst4~0               ; combout          ;
+; |licznik7943|7493:inst|13~0        ; |licznik7943|7493:inst|13~0        ; combout          ;
+; |licznik7943|7493:inst|14~0        ; |licznik7943|7493:inst|14~0        ; combout          ;
+; |licznik7943|inst2                 ; |licznik7943|inst2                 ; combout          ;
+; |licznik7943|inst10                ; |licznik7943|inst10                ; combout          ;
+; |licznik7943|7493:inst1|15~0       ; |licznik7943|7493:inst1|15~0       ; combout          ;
+; |licznik7943|7493:inst1|16~0       ; |licznik7943|7493:inst1|16~0       ; combout          ;
+; |licznik7943|7493:inst|15~0        ; |licznik7943|7493:inst|15~0        ; combout          ;
+; |licznik7943|7493:inst|16~0        ; |licznik7943|7493:inst|16~0        ; combout          ;
+; |licznik7943|OLEDR[6]              ; |licznik7943|OLEDR[6]              ; padio            ;
+; |licznik7943|OLEDR[5]              ; |licznik7943|OLEDR[5]              ; padio            ;
+; |licznik7943|OLEDR[4]              ; |licznik7943|OLEDR[4]              ; padio            ;
+; |licznik7943|OLEDR[3]              ; |licznik7943|OLEDR[3]              ; padio            ;
+; |licznik7943|OLEDR[2]              ; |licznik7943|OLEDR[2]              ; padio            ;
+; |licznik7943|OLEDR[1]              ; |licznik7943|OLEDR[1]              ; padio            ;
+; |licznik7943|OLEDR[0]              ; |licznik7943|OLEDR[0]              ; padio            ;
+; |licznik7943|KEY[0]                ; |licznik7943|KEY[0]~corein         ; combout          ;
+; |licznik7943|7493:inst1|16~clkctrl ; |licznik7943|7493:inst1|16~clkctrl ; outclk           ;
++------------------------------------+------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+----------------------------------------------------------------------------+
-; Missing 1-Value Coverage                                                   ;
-+----------------------------+----------------------------+------------------+
-; Node Name                  ; Output Port Name           ; Output Port Type ;
-+----------------------------+----------------------------+------------------+
-; |licznik7943|pin_name9     ; |licznik7943|pin_name9     ; pin_out          ;
-; |licznik7943|7493:inst1|13 ; |licznik7943|7493:inst1|13 ; regout           ;
-+----------------------------+----------------------------+------------------+
++---------------------------------------------------------------------+
+; Missing 1-Value Coverage                                            ;
++---------------------+----------------------------+------------------+
+; Node Name           ; Output Port Name           ; Output Port Type ;
++---------------------+----------------------------+------------------+
+; |licznik7943|KEY[1] ; |licznik7943|KEY[1]~corein ; combout          ;
++---------------------+----------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+----------------------------------------------------------------------------+
-; Missing 0-Value Coverage                                                   ;
-+----------------------------+----------------------------+------------------+
-; Node Name                  ; Output Port Name           ; Output Port Type ;
-+----------------------------+----------------------------+------------------+
-; |licznik7943|pin_name9     ; |licznik7943|pin_name9     ; pin_out          ;
-; |licznik7943|7493:inst1|13 ; |licznik7943|7493:inst1|13 ; regout           ;
-+----------------------------+----------------------------+------------------+
++---------------------------------------------------------------------+
+; Missing 0-Value Coverage                                            ;
++---------------------+----------------------------+------------------+
+; Node Name           ; Output Port Name           ; Output Port Type ;
++---------------------+----------------------------+------------------+
+; |licznik7943|KEY[1] ; |licznik7943|KEY[1]~corein ; combout          ;
++---------------------+----------------------------+------------------+
 
 
 +---------------------+
@@ -171,18 +173,18 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Simulator
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Dec 14 19:44:40 2016
+    Info: Processing started: Fri Dec 16 00:19:15 2016
 Info: Command: quartus_sim --simulation_results_format=VWF licznik7943 -c licznik7943
 Info (324025): Using vector source file "E:/Projekty/PTC/lab03/licznik7943/Waveform.vwf"
 Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info (310002): Simulation partitioned into 1 sub-simulations
-Info (328053): Simulation coverage is      92.00 %
-Info (328052): Number of transitions in simulation is 3908
+Info (328053): Simulation coverage is      96.30 %
+Info (328052): Number of transitions in simulation is 5490
 Info (324045): Vector file licznik7943.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 331 megabytes
-    Info: Processing ended: Wed Dec 14 19:44:40 2016
+    Info: Peak virtual memory: 367 megabytes
+    Info: Processing ended: Fri Dec 16 00:19:15 2016
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

@@ -1,3 +1,4 @@
+/* Simulator = Quartus II Simulator */
 /*
 WARNING: Do NOT edit the input and output ports in this file in a text
 editor if you plan to continue editing the block that represents it in
@@ -32,7 +33,7 @@ HEADER
 	GRID_DUTY_CYCLE = 50;
 }
 
-SIGNAL("pin_name1")
+SIGNAL("KEY[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -42,7 +43,87 @@ SIGNAL("pin_name1")
 	PARENT = "";
 }
 
-SIGNAL("pin_name2")
+SIGNAL("OLEDR")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 7;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("OLEDR[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "OLEDR";
+}
+
+SIGNAL("OLEDR[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "OLEDR";
+}
+
+SIGNAL("OLEDR[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "OLEDR";
+}
+
+SIGNAL("OLEDR[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "OLEDR";
+}
+
+SIGNAL("OLEDR[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "OLEDR";
+}
+
+SIGNAL("OLEDR[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "OLEDR";
+}
+
+SIGNAL("OLEDR[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "OLEDR";
+}
+
+SIGNAL("SW[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -52,91 +133,7 @@ SIGNAL("pin_name2")
 	PARENT = "";
 }
 
-SIGNAL("pin_name3")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("pin_name4")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("pin_name5")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("pin_name6")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("pin_name7")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("pin_name8")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("pin_name9")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-GROUP("Q")
-{
-	MEMBERS = "pin_name3", "pin_name4", "pin_name5", "pin_name6", "pin_name7", "pin_name8", "pin_name9";
-}
-
-TRANSITION_LIST("pin_name1")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 10000.0;
-	}
-}
-
-TRANSITION_LIST("pin_name2")
+TRANSITION_LIST("KEY[0]")
 {
 	NODE
 	{
@@ -150,7 +147,7 @@ TRANSITION_LIST("pin_name2")
 	}
 }
 
-TRANSITION_LIST("pin_name3")
+TRANSITION_LIST("OLEDR[6]")
 {
 	NODE
 	{
@@ -159,7 +156,7 @@ TRANSITION_LIST("pin_name3")
 	}
 }
 
-TRANSITION_LIST("pin_name4")
+TRANSITION_LIST("OLEDR[5]")
 {
 	NODE
 	{
@@ -168,7 +165,7 @@ TRANSITION_LIST("pin_name4")
 	}
 }
 
-TRANSITION_LIST("pin_name5")
+TRANSITION_LIST("OLEDR[4]")
 {
 	NODE
 	{
@@ -177,7 +174,7 @@ TRANSITION_LIST("pin_name5")
 	}
 }
 
-TRANSITION_LIST("pin_name6")
+TRANSITION_LIST("OLEDR[3]")
 {
 	NODE
 	{
@@ -186,7 +183,7 @@ TRANSITION_LIST("pin_name6")
 	}
 }
 
-TRANSITION_LIST("pin_name7")
+TRANSITION_LIST("OLEDR[2]")
 {
 	NODE
 	{
@@ -195,7 +192,7 @@ TRANSITION_LIST("pin_name7")
 	}
 }
 
-TRANSITION_LIST("pin_name8")
+TRANSITION_LIST("OLEDR[1]")
 {
 	NODE
 	{
@@ -204,18 +201,27 @@ TRANSITION_LIST("pin_name8")
 	}
 }
 
-TRANSITION_LIST("pin_name9")
+TRANSITION_LIST("OLEDR[0]")
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("SW[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 10000.0;
 	}
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "pin_name1";
+	CHANNEL = "KEY[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
@@ -224,91 +230,91 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "pin_name2";
+	CHANNEL = "OLEDR";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 1;
 	TREE_LEVEL = 0;
+	CHILDREN = 2, 3, 4, 5, 6, 7, 8;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Q";
+	CHANNEL = "OLEDR[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 2;
-	TREE_LEVEL = 0;
-	CHILDREN = 3, 4, 5, 6, 7, 8, 9;
+	TREE_LEVEL = 1;
+	PARENT = 1;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "pin_name9";
+	CHANNEL = "OLEDR[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 3;
 	TREE_LEVEL = 1;
-	PARENT = 2;
+	PARENT = 1;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "pin_name8";
+	CHANNEL = "OLEDR[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 4;
 	TREE_LEVEL = 1;
-	PARENT = 2;
+	PARENT = 1;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "pin_name7";
+	CHANNEL = "OLEDR[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 5;
 	TREE_LEVEL = 1;
-	PARENT = 2;
+	PARENT = 1;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "pin_name6";
+	CHANNEL = "OLEDR[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 6;
 	TREE_LEVEL = 1;
-	PARENT = 2;
+	PARENT = 1;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "pin_name5";
+	CHANNEL = "OLEDR[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 7;
 	TREE_LEVEL = 1;
-	PARENT = 2;
+	PARENT = 1;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "pin_name4";
+	CHANNEL = "OLEDR[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 8;
 	TREE_LEVEL = 1;
-	PARENT = 2;
+	PARENT = 1;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "pin_name3";
+	CHANNEL = "SW[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 9;
-	TREE_LEVEL = 1;
-	PARENT = 2;
+	TREE_LEVEL = 0;
 }
 
 TIME_BAR

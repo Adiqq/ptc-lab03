@@ -1,13 +1,13 @@
 |licznik7943
-pin_name2 <= 7493:inst.QA
-pin_name1 => 7493:inst.CLKA
-pin_name3 <= 7493:inst.QB
-pin_name4 <= 7493:inst.QC
-pin_name5 <= 7493:inst.QD
-pin_name6 <= 7493:inst1.QA
-pin_name7 <= 7493:inst1.QB
-pin_name8 <= 7493:inst1.QC
-pin_name9 <= 7493:inst1.QD
+OLEDR[0] <= 7493:inst.QA
+OLEDR[1] <= 7493:inst.QB
+OLEDR[2] <= 7493:inst.QC
+OLEDR[3] <= 7493:inst.QD
+OLEDR[4] <= 7493:inst1.QA
+OLEDR[5] <= 7493:inst1.QB
+OLEDR[6] <= 7493:inst1.QC
+KEY[0] => inst10.IN0
+KEY[1] => inst10.IN1
 
 
 |licznik7943|7493:inst
