@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "12/16/2016 00:18:21"
+// Generated on "12/17/2016 01:51:37"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    licznik7943
 // 
@@ -105,42 +105,49 @@ end
 initial
 begin
 	OLEDR_expected[6] = 1'bX;
+	OLEDR_expected[6] = #999000 1'b0;
 end 
 
 // expected OLEDR[5]
 initial
 begin
 	OLEDR_expected[5] = 1'bX;
+	OLEDR_expected[5] = #999000 1'b0;
 end 
 
 // expected OLEDR[4]
 initial
 begin
 	OLEDR_expected[4] = 1'bX;
+	OLEDR_expected[4] = #999000 1'b0;
 end 
 
 // expected OLEDR[3]
 initial
 begin
 	OLEDR_expected[3] = 1'bX;
+	OLEDR_expected[3] = #999000 1'b0;
 end 
 
 // expected OLEDR[2]
 initial
 begin
 	OLEDR_expected[2] = 1'bX;
+	OLEDR_expected[2] = #999000 1'b0;
 end 
 
 // expected OLEDR[1]
 initial
 begin
 	OLEDR_expected[1] = 1'bX;
+	OLEDR_expected[1] = #999000 1'b0;
 end 
 
 // expected OLEDR[0]
 initial
 begin
 	OLEDR_expected[0] = 1'bX;
+	OLEDR_expected[0] = #999000 1'b0;
 end 
 // generate trigger
 always @(OLEDR_expected or OLEDR)
@@ -254,7 +261,7 @@ initial
 
 begin 
 $timeformat(-12,3," ps",6);
-#1000000;
+#10000000;
 if (nummismatches > 0)
 	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
 else

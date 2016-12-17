@@ -3,52 +3,28 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup '7493:inst|16'
-Slack : -0.037
-TNS   : -0.037
+Slack : -0.036
+TNS   : -0.036
 
 Type  : Slow Model Setup '7493:inst1|16'
-Slack : 0.235
+Slack : 0.233
 TNS   : 0.000
 
 Type  : Slow Model Setup 'KEY[0]'
-Slack : 5.827
+Slack : 5.285
 TNS   : 0.000
 
 Type  : Slow Model Hold 'KEY[0]'
-Slack : -5.557
-TNS   : -5.557
+Slack : -5.015
+TNS   : -5.015
 
 Type  : Slow Model Hold '7493:inst|16'
-Slack : -1.735
-TNS   : -1.735
+Slack : -1.429
+TNS   : -1.429
 
 Type  : Slow Model Hold '7493:inst1|16'
 Slack : 0.391
 TNS   : 0.000
-
-Type  : Slow Model Recovery '7493:inst|16'
-Slack : -4.005
-TNS   : -14.794
-
-Type  : Slow Model Recovery '7493:inst1|16'
-Slack : -0.924
-TNS   : -1.848
-
-Type  : Slow Model Recovery 'KEY[0]'
-Slack : 0.860
-TNS   : 0.000
-
-Type  : Slow Model Removal 'KEY[0]'
-Slack : -4.165
-TNS   : -4.165
-
-Type  : Slow Model Removal '7493:inst1|16'
-Slack : -2.381
-TNS   : -4.762
-
-Type  : Slow Model Removal '7493:inst|16'
-Slack : -0.526
-TNS   : -0.526
 
 Type  : Slow Model Minimum Pulse Width 'KEY[0]'
 Slack : -1.222
@@ -63,52 +39,28 @@ Slack : -0.500
 TNS   : -2.000
 
 Type  : Fast Model Setup '7493:inst|16'
-Slack : 0.518
+Slack : 0.519
 TNS   : 0.000
 
 Type  : Fast Model Setup '7493:inst1|16'
-Slack : 0.634
+Slack : 0.632
 TNS   : 0.000
 
 Type  : Fast Model Setup 'KEY[0]'
-Slack : 3.317
+Slack : 3.025
 TNS   : 0.000
 
 Type  : Fast Model Hold 'KEY[0]'
-Slack : -2.937
-TNS   : -2.937
+Slack : -2.645
+TNS   : -2.645
 
 Type  : Fast Model Hold '7493:inst|16'
-Slack : -0.846
-TNS   : -0.846
+Slack : -0.744
+TNS   : -0.744
 
 Type  : Fast Model Hold '7493:inst1|16'
 Slack : 0.215
 TNS   : 0.000
-
-Type  : Fast Model Recovery '7493:inst|16'
-Slack : -1.805
-TNS   : -6.690
-
-Type  : Fast Model Recovery '7493:inst1|16'
-Slack : 0.002
-TNS   : 0.000
-
-Type  : Fast Model Recovery 'KEY[0]'
-Slack : 0.735
-TNS   : 0.000
-
-Type  : Fast Model Removal 'KEY[0]'
-Slack : -2.241
-TNS   : -2.241
-
-Type  : Fast Model Removal '7493:inst1|16'
-Slack : -1.508
-TNS   : -3.016
-
-Type  : Fast Model Removal '7493:inst|16'
-Slack : -0.231
-TNS   : -0.231
 
 Type  : Fast Model Minimum Pulse Width 'KEY[0]'
 Slack : -1.222

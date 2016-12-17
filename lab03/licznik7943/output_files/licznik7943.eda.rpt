@@ -1,5 +1,5 @@
 EDA Netlist Writer report for licznik7943
-Fri Dec 16 00:18:21 2016
+Sat Dec 17 01:51:37 2016
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -34,7 +34,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                    ;
 +---------------------------+-----------------------------------+
-; EDA Netlist Writer Status ; Failed - Fri Dec 16 00:18:21 2016 ;
+; EDA Netlist Writer Status ; Failed - Sat Dec 17 01:51:37 2016 ;
 ; Revision Name             ; licznik7943                       ;
 ; Top-level Entity Name     ; licznik7943                       ;
 ; Family                    ; Cyclone II                        ;
@@ -47,7 +47,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Dec 16 00:18:21 2016
+    Info: Processing started: Sat Dec 17 01:51:36 2016
 Info: Command: quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog licznik7943 -c licznik7943 --vector_source=E:/Projekty/PTC/lab03/licznik7943/Waveform.vwf --testbench_file=./simulation/qsim/licznik7943.vt
 Error (201009): Bus port "OLEDR" specified in vector source file has width of 7, which does not match width 18 of top level port of same name
 Error (201009): Bus port "OLEDR" specified in vector source file has width of 7, which does not match width 18 of top level port of same name
@@ -58,8 +58,8 @@ Error (201009): Bus port "KEY" specified in vector source file has width of 2, w
 Info (201000): Generated Verilog Test Bench File ./simulation/qsim/licznik7943.vt for simulation
 Error: Quartus II 64-Bit EDA Netlist Writer was unsuccessful. 6 errors, 0 warnings
     Error: Peak virtual memory: 405 megabytes
-    Error: Processing ended: Fri Dec 16 00:18:21 2016
-    Error: Elapsed time: 00:00:00
+    Error: Processing ended: Sat Dec 17 01:51:37 2016
+    Error: Elapsed time: 00:00:01
     Error: Total CPU time (on all processors): 00:00:00
 
 
