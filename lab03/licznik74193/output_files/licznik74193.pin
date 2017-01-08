@@ -193,7 +193,7 @@ GND*                         : AD4       :        :                   :         
 GND*                         : AD5       :        :                   :         : 1         :                
 GND*                         : AD6       :        :                   :         : 1         :                
 GND*                         : AD7       :        :                   :         : 1         :                
-SW[0]                        : AD8       : input  : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AD8       :        :                   :         : 8         :                
 GND*                         : AD9       :        :                   :         : 8         :                
 GND*                         : AD10      :        :                   :         : 8         :                
 GND*                         : AD11      :        :                   :         : 8         :                
@@ -841,7 +841,7 @@ GND+                         : T24       :        :                   :         
 GND+                         : T25       :        :                   :         : 6         :                
 GND*                         : T26       :        :                   :         : 6         :                
 GND*                         : T27       :        :                   :         : 6         :                
-GND*                         : T28       :        :                   :         : 6         :                
+KEY[1]                       : T28       : input  : 3.3-V LVTTL       :         : 6         : Y              
 KEY[0]                       : T29       : input  : 3.3-V LVTTL       :         : 6         : Y              
 VCCIO6                       : T30       : power  :                   : 3.3V    : 6         :                
 GND*                         : U1        :        :                   :         : 1         :                

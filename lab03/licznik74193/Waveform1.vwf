@@ -1,3 +1,4 @@
+/* Simulator = Quartus II Simulator */
 /*
 WARNING: Do NOT edit the input and output ports in this file in a text
 editor if you plan to continue editing the block that represents it in
@@ -147,7 +148,12 @@ TRANSITION_LIST("KEY[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 5000.0;
+		NODE
+		{
+			REPEAT = 250;
+			LEVEL 0 FOR 10.0;
+			LEVEL 1 FOR 10.0;
+		}
 	}
 }
 
@@ -156,12 +162,7 @@ TRANSITION_LIST("KEY[0]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 250;
-			LEVEL 0 FOR 10.0;
-			LEVEL 1 FOR 10.0;
-		}
+		LEVEL 0 FOR 5000.0;
 	}
 }
 
@@ -269,7 +270,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "OLEDR";
 	EXPAND_STATUS = EXPANDED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 3;
 	TREE_LEVEL = 0;
 	CHILDREN = 4, 5, 6, 7, 8, 9, 10;
@@ -279,7 +280,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "OLEDR[6]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 4;
 	TREE_LEVEL = 1;
 	PARENT = 3;
@@ -289,7 +290,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "OLEDR[5]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 5;
 	TREE_LEVEL = 1;
 	PARENT = 3;
@@ -299,7 +300,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "OLEDR[4]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 6;
 	TREE_LEVEL = 1;
 	PARENT = 3;
@@ -309,7 +310,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "OLEDR[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 7;
 	TREE_LEVEL = 1;
 	PARENT = 3;
@@ -319,7 +320,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "OLEDR[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 8;
 	TREE_LEVEL = 1;
 	PARENT = 3;
@@ -329,7 +330,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "OLEDR[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 9;
 	TREE_LEVEL = 1;
 	PARENT = 3;
@@ -339,7 +340,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "OLEDR[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 10;
 	TREE_LEVEL = 1;
 	PARENT = 3;

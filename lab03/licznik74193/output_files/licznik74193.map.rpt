@@ -1,5 +1,5 @@
 Analysis & Synthesis report for licznik74193
-Fri Dec 16 00:26:32 2016
+Sun Jan 08 20:35:21 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,15 +41,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec 16 00:26:32 2016           ;
+; Analysis & Synthesis Status        ; Successful - Sun Jan 08 20:35:21 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; licznik74193                                    ;
 ; Top-level Entity Name              ; licznik74193                                    ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 39                                              ;
-;     Total combinational functions  ; 39                                              ;
-;     Dedicated logic registers      ; 9                                               ;
-; Total registers                    ; 9                                               ;
+; Total logic elements               ; 33                                              ;
+;     Total combinational functions  ; 33                                              ;
+;     Dedicated logic registers      ; 8                                               ;
+; Total registers                    ; 8                                               ;
 ; Total pins                         ; 9                                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
@@ -161,7 +161,6 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+---------+
 ; licznik74193.bdf                 ; yes             ; User Block Diagram/Schematic File  ; E:/Projekty/PTC/lab03/licznik74193/licznik74193.bdf                    ;         ;
 ; 74193.bdf                        ; yes             ; Megafunction                       ; e:/programy/altera/13.0sp1/quartus/libraries/others/maxplus2/74193.bdf ;         ;
-; dff2.bdf                         ; yes             ; Megafunction                       ; e:/programy/altera/13.0sp1/quartus/libraries/others/maxplus2/dff2.bdf  ;         ;
 +----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+---------+
 
 
@@ -170,28 +169,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------------+
 ; Resource                                    ; Usage           ;
 +---------------------------------------------+-----------------+
-; Estimated Total logic elements              ; 39              ;
+; Estimated Total logic elements              ; 33              ;
 ;                                             ;                 ;
-; Total combinational functions               ; 39              ;
+; Total combinational functions               ; 33              ;
 ; Logic element usage by number of LUT inputs ;                 ;
-;     -- 4 input functions                    ; 14              ;
-;     -- 3 input functions                    ; 7               ;
-;     -- <=2 input functions                  ; 18              ;
+;     -- 4 input functions                    ; 12              ;
+;     -- 3 input functions                    ; 5               ;
+;     -- <=2 input functions                  ; 16              ;
 ;                                             ;                 ;
 ; Logic elements by mode                      ;                 ;
-;     -- normal mode                          ; 39              ;
+;     -- normal mode                          ; 33              ;
 ;     -- arithmetic mode                      ; 0               ;
 ;                                             ;                 ;
-; Total registers                             ; 9               ;
-;     -- Dedicated logic registers            ; 9               ;
+; Total registers                             ; 8               ;
+;     -- Dedicated logic registers            ; 8               ;
 ;     -- I/O registers                        ; 0               ;
 ;                                             ;                 ;
 ; I/O pins                                    ; 9               ;
 ; Embedded Multiplier 9-bit elements          ; 0               ;
-; Maximum fan-out node                        ; 74193:inst|26~0 ;
-; Maximum fan-out                             ; 11              ;
-; Total fan-out                               ; 140             ;
-; Average fan-out                             ; 2.46            ;
+; Maximum fan-out node                        ; 74193:inst|23~0 ;
+; Maximum fan-out                             ; 9               ;
+; Total fan-out                               ; 122             ;
+; Average fan-out                             ; 2.44            ;
 +---------------------------------------------+-----------------+
 
 
@@ -200,10 +199,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name       ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------+--------------+
-; |licznik74193              ; 39 (4)            ; 9 (0)        ; 0           ; 0            ; 0       ; 0         ; 9    ; 0            ; |licznik74193             ; work         ;
-;    |74193:inst1|           ; 18 (18)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |licznik74193|74193:inst1 ; work         ;
-;    |74193:inst|            ; 16 (16)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |licznik74193|74193:inst  ; work         ;
-;    |dff2:inst2|            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |licznik74193|dff2:inst2  ; work         ;
+; |licznik74193              ; 33 (2)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 9    ; 0            ; |licznik74193             ; work         ;
+;    |74193:inst1|           ; 17 (17)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |licznik74193|74193:inst1 ; work         ;
+;    |74193:inst|            ; 14 (14)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |licznik74193|74193:inst  ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -213,7 +211,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 9     ;
+; Total registers                              ; 8     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 8     ;
@@ -238,7 +236,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Dec 16 00:26:31 2016
+    Info: Processing started: Sun Jan 08 20:35:20 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off licznik74193 -c licznik74193
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file licznik74193.bdf
@@ -246,8 +244,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file licznik
 Info (12127): Elaborating entity "licznik74193" for the top level hierarchy
 Info (12128): Elaborating entity "74193" for hierarchy "74193:inst"
 Info (12130): Elaborated megafunction instantiation "74193:inst"
-Info (12128): Elaborating entity "DFF2" for hierarchy "DFF2:inst2"
-Info (12130): Elaborated megafunction instantiation "DFF2:inst2"
 Warning (19016): Clock multiplexers are found and protected
     Warning (19017): Found clock multiplexer 74193:inst1|93~synth
     Warning (19017): Found clock multiplexer 74193:inst|93~synth
@@ -256,17 +252,15 @@ Warning (13004): Presettable and clearable registers converted to equivalent cir
     Warning (13310): Register "74193:inst1|25" is converted into an equivalent circuit using register "74193:inst1|25~_emulated" and latch "74193:inst1|24~1"
     Warning (13310): Register "74193:inst|23" is converted into an equivalent circuit using register "74193:inst|23~_emulated" and latch "74193:inst1|24~1"
     Warning (13310): Register "74193:inst|26" is converted into an equivalent circuit using register "74193:inst|26~_emulated" and latch "74193:inst1|24~1"
-Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "74193:inst|94"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 48 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 42 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 39 logic cells
+    Info (21061): Implemented 33 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 484 megabytes
-    Info: Processing ended: Fri Dec 16 00:26:32 2016
+    Info: Peak virtual memory: 487 megabytes
+    Info: Processing ended: Sun Jan 08 20:35:21 2017
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
