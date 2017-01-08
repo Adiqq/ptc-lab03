@@ -1,5 +1,5 @@
 EDA Netlist Writer report for CW4
-Sun Jan 08 13:18:50 2017
+Sun Jan 08 14:52:22 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun Jan 08 13:18:50 2017 ;
+; EDA Netlist Writer Status ; Successful - Sun Jan 08 14:52:22 2017 ;
 ; Revision Name             ; CW4                                   ;
 ; Top-level Entity Name     ; CW4                                   ;
 ; Family                    ; Cyclone II                            ;
@@ -80,12 +80,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Jan 08 13:18:50 2017
+    Info: Processing started: Sun Jan 08 14:52:22 2017
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog CW4 -c CW4
 Info (204019): Generated file CW4.vo in folder "E:/Projekty/PTC/lab04/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 421 megabytes
-    Info: Processing ended: Sun Jan 08 13:18:50 2017
+    Info: Peak virtual memory: 412 megabytes
+    Info: Processing ended: Sun Jan 08 14:52:22 2017
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
