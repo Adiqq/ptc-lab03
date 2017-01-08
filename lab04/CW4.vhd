@@ -1,0 +1,160 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+ENTITY CW4 IS
+	PORT ( 
+		SW : IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+		HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7 : OUT STD_LOGIC_VECTOR(0 TO 6)
+	);
+END CW4;
+
+ARCHITECTURE strukturalna OF CW4 IS
+
+CONSTANT SPACJA: STD_LOGIC_VECTOR(2 DOWNTO 0):="000"; -- KOD SPACJI
+SIGNAL M0,M1,M2,M3,M4,M5,M6,M7 : STD_LOGIC_VECTOR(2 DOWNTO 0);
+
+COMPONENT mux3bit_8to1 -- multiplekser
+	PORT ( 
+		S, U0, U1, U2, U3, U4, U5,U6,U7: IN STD_LOGIC_VECTOR(2 DOWNTO 0); --WEKTOR STERUJĄCY I 8 wektorów INFORMACYJNYCH
+		M : OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
+	);
+END COMPONENT;
+
+COMPONENT char7seg -- transkoder
+	PORT ( 
+		C : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+		Display : OUT STD_LOGIC_VECTOR(0 TO 6)
+	);
+END COMPONENT; 
+-- KONKRETYZACJA UŻYCIA KOMPONENTÓW
+BEGIN
+	-- KONKRETYZACJE KOLEJNYCH MULTIPLEKSERÓW UKŁADU
+	MUX0: mux3bit_8to1 PORT MAP(
+		SW(17 DOWNTO 15), --sterujący
+		SW(2 DOWNTO 0), -- H
+		SW(5 DOWNTO 3), -- I
+		SW(8 DOWNTO 6), -- J
+		SW(11 DOWNTO 9), -- L
+		SW(14 DOWNTO 12), -- O
+		SPACJA,
+		SPACJA,
+		SPACJA,
+		M0
+	);
+	MUX1: mux3bit_8to1 PORT MAP(
+		SW(17 DOWNTO 15), --sterujący
+		SPACJA,
+		SW(2 DOWNTO 0), -- H
+		SW(5 DOWNTO 3), -- I
+		SW(8 DOWNTO 6), -- J
+		SW(11 DOWNTO 9), -- L
+		SW(14 DOWNTO 12), -- O
+		SPACJA,
+		SPACJA,
+		M1
+	);
+	MUX2: mux3bit_8to1 PORT MAP(
+		SW(17 DOWNTO 15), --sterujący
+		SPACJA,
+		SPACJA,
+		SW(2 DOWNTO 0), -- H
+		SW(5 DOWNTO 3), -- I
+		SW(8 DOWNTO 6), -- J
+		SW(11 DOWNTO 9), -- L
+		SW(14 DOWNTO 12), -- O
+		SPACJA,
+		M2
+	);
+	MUX3: mux3bit_8to1 PORT MAP(
+		SW(17 DOWNTO 15), --sterujący
+		SPACJA,
+		SPACJA,
+		SPACJA,
+		SW(2 DOWNTO 0), -- H
+		SW(5 DOWNTO 3), -- I
+		SW(8 DOWNTO 6), -- J
+		SW(11 DOWNTO 9), -- L
+		SW(14 DOWNTO 12), -- O
+		M3
+	);
+	MUX4: mux3bit_8to1 PORT MAP(
+		SW(17 DOWNTO 15),
+		SW(14 DOWNTO 12),
+		SPACJA,
+		SPACJA,
+		SPACJA,
+		SW(2 DOWNTO 0),
+		SW(5 DOWNTO 3),
+		SW(8 DOWNTO 6),
+		SW(11 DOWNTO 9),
+		M4
+	);
+	MUX5: mux3bit_8to1 PORT MAP(
+		SW(17 DOWNTO 15),
+		SW(11 DOWNTO 9),
+		SW(14 DOWNTO 12),
+		SPACJA,
+		SPACJA,
+		SPACJA,
+		SW(2 DOWNTO 0),
+		SW(5 DOWNTO 3),
+		SW(8 DOWNTO 6),
+		M5
+	);
+	MUX6: mux3bit_8to1 PORT MAP(
+		SW(17 DOWNTO 15),
+		SW(8 DOWNTO 6),
+		SW(11 DOWNTO 9),
+		SW(14 DOWNTO 12),
+		SPACJA,
+		SPACJA,
+		SPACJA,
+		SW(2 DOWNTO 0),
+		SW(5 DOWNTO 3),
+		M6
+	);
+	MUX7: mux3bit_8to1 PORT MAP(
+		SW(17 DOWNTO 15),
+		SW(5 DOWNTO 3),
+		SW(8 DOWNTO 6),
+		SW(11 DOWNTO 9),
+		SW(14 DOWNTO 12),
+		SPACJA,
+		SPACJA,
+		SPACJA,
+		SW(2 DOWNTO 0),
+		M7
+	);
+	-- KONKRETYZACJE KOLEJNYCH TRANSKODERÓW
+	H0: char7seg PORT MAP (
+		M7,
+		HEX0
+	);
+	H1: char7seg PORT MAP (
+		M6,
+		HEX1
+	);
+	H2: char7seg PORT MAP (
+		M5,
+		HEX2
+	);
+	H3: char7seg PORT MAP (
+		M4,
+		HEX3
+	);
+	H4: char7seg PORT MAP (
+		M3,
+		HEX4
+	);
+	H5: char7seg PORT MAP (
+		M2,
+		HEX5
+	);
+	H6: char7seg PORT MAP (
+		M1,
+		HEX6
+	);
+	H7: char7seg PORT MAP (
+		M0,
+		HEX7
+	);
+END strukturalna;

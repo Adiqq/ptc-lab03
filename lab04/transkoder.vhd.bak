@@ -1,0 +1,13 @@
+-- IMPLEMENTACJA TRANSKODERA
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+ENTITY char7seg IS
+	PORT ( 
+		C : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+		Display : OUT STD_LOGIC_VECTOR(0 TO 6);
+	);
+END char7seg;
+
+ARCHITECTURE strukturalna OF char7seg IS
+--douzupełnienia
+END strukturalna;

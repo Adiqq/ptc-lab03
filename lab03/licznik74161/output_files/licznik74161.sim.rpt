@@ -1,5 +1,5 @@
 Simulator report for licznik74161
-Fri Dec 16 00:22:21 2016
+Sat Dec 17 01:53:58 2016
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -172,7 +172,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Simulator
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Dec 16 00:22:20 2016
+    Info: Processing started: Sat Dec 17 01:53:58 2016
 Info: Command: quartus_sim --simulation_results_format=VWF licznik74161 -c licznik74161
 Info (324025): Using vector source file "E:/Projekty/PTC/lab03/licznik74161/Waveform.vwf"
 Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
@@ -183,8 +183,8 @@ Info (328052): Number of transitions in simulation is 5735
 Info (324045): Vector file licznik74161.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 367 megabytes
-    Info: Processing ended: Fri Dec 16 00:22:21 2016
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Sat Dec 17 01:53:58 2016
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 

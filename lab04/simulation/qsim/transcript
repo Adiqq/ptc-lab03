@@ -1,0 +1,113 @@
+# do CW4.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CW4
+# 
+# Top level modules:
+# 	CW4
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CW4_vlg_sample_tst
+# -- Compiling module CW4_vlg_check_tst
+# -- Compiling module CW4_vlg_vec_tst
+# 
+# Top level modules:
+# 	CW4_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.CW4_vlg_vec_tst 
+# Loading work.CW4_vlg_vec_tst
+# Loading work.CW4
+# Loading cycloneii_ver.cycloneii_lcell_comb
+# Loading cycloneii_ver.cycloneii_io
+# Loading cycloneii_ver.cycloneii_mux21
+# Loading cycloneii_ver.cycloneii_dffe
+# Loading cycloneii_ver.cycloneii_asynch_io
+# Loading work.CW4_vlg_sample_tst
+# Loading work.CW4_vlg_check_tst
+# Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# ERROR! Vector Mismatch for output port HEX4[0] :: @time = 30000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port HEX4[1] :: @time = 30000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port HEX4[2] :: @time = 30000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port HEX4[3] :: @time = 30000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port HEX4[4] :: @time = 30000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port HEX4[5] :: @time = 30000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port HEX4[6] :: @time = 30000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port HEX5[0] :: @time = 30000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port HEX5[1] :: @time = 30000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port HEX5[2] :: @time = 30000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port HEX5[3] :: @time = 30000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port HEX5[4] :: @time = 30000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port HEX5[5] :: @time = 30000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port HEX5[6] :: @time = 30000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port HEX6[0] :: @time = 30000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port HEX6[1] :: @time = 30000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port HEX6[2] :: @time = 30000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port HEX6[3] :: @time = 30000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port HEX6[4] :: @time = 30000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port HEX6[5] :: @time = 30000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port HEX6[6] :: @time = 30000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+# ERROR! Vector Mismatch for output port HEX7[0] :: @time = 30000.000 ps
+#      Expected value = 0000000
+#      Real value = 1001000
+# ERROR! Vector Mismatch for output port HEX7[3] :: @time = 30000.000 ps
+#      Expected value = 0000000
+#      Real value = 1001000
+# ERROR! Vector Mismatch for output port HEX7[1] :: @time = 60000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111001
+# ERROR! Vector Mismatch for output port HEX7[2] :: @time = 60000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111001
+# ERROR! Vector Mismatch for output port HEX7[6] :: @time = 60000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111001
+# ERROR! Vector Mismatch for output port HEX7[5] :: @time = 90000.000 ps
+#      Expected value = 0000000
+#      Real value = 1000011
+# ERROR! Vector Mismatch for output port HEX7[4] :: @time = 180000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111111
+#          28 mismatched vectors : Simulation failed !
+# ** Note: $finish    : CW4.vt(1249)
+#    Time: 1 us  Iteration: 0  Instance: /CW4_vlg_vec_tst/tb_out
