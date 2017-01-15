@@ -13,11 +13,11 @@ BEGIN
 	WITH S SELECT
 		M <=  U0 WHEN "000",
 				U1 WHEN "001",
-				U2 WHEN "010",
-				U3 WHEN "011",
-				U4 WHEN "100",
-				U5 WHEN "101",
-				U6 WHEN "110",
-				U7 WHEN "111",
+				U2 WHEN "011",
+				U3 WHEN "010",
+				U4 WHEN "110",
+				U5 WHEN "111",
+				U6 WHEN "101",
+				U7 WHEN "100",
 				"111" WHEN OTHERS;
 END strukturalna;
