@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Projekty\PTC\rewersyjny\simulation\qsim
+vrewersyjny
+Z1 ILSB9[TXMPFj:4W8BGfTh12
+Z2 Voan^_>B9J]Cc10Ug0@?Yo1
+Z3 dE:\Projekty\PTC\rewersyjny\simulation\qsim
+Z4 w1484607394
+Z5 8rewersyjny.vo
+Z6 Frewersyjny.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|rewersyjny.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 S7<kAW9b0MJU<8heDE;ED2
+!s85 0
+Z11 !s108 1484607394.979000
+Z12 !s107 rewersyjny.vo|
+!s101 -O0
+vrewersyjny_vlg_check_tst
+!i10b 1
+Z13 !s100 f^HA<8Z16gSH0c6H`^bn_0
+Z14 Ik5D1Af]VkAkSX0hX]ec_`0
+Z15 VGXaU8jiQ?Vg`CmS0f]^=Q1
+R3
+R4
+Z16 8rewersyjny.vt
+Z17 Frewersyjny.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z18 !s108 1484607395.026000
+Z19 !s107 rewersyjny.vt|
+Z20 !s90 -work|work|rewersyjny.vt|
+!s101 -O0
+R9
+vrewersyjny_vlg_sample_tst
+!i10b 1
+Z21 !s100 9^0nPg;<V^SC6fm5=?:`d3
+Z22 IfO4akOZQJ1Rcd0C1eMh:A3
+Z23 VX6LbCDz7ZKzF8a[MMgj4e0
+R3
+R4
+R16
+R17
+L0 29
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9
+vrewersyjny_vlg_vec_tst
+!i10b 1
+Z24 !s100 N=GG7ZBiQgZ1;8TKO:bY?3
+Z25 IMVEK9`UV0TE>[DcEVZjOj3
+Z26 VVS>ZKPg<Pbj=YQ:0J2;@f1
+R3
+R4
+R16
+R17
+Z27 L0 325
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9
