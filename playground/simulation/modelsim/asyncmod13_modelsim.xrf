@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, E:/Projekty/PTC/playground/asyncmod13.bdf
+source_file = 1, E:/Projekty/PTC/playground/Waveform.vwf
+source_file = 1, E:/Projekty/PTC/playground/Waveform1.vwf
+source_file = 1, E:/Projekty/PTC/playground/db/asyncmod13.cbx.xml
+design_name = asyncmod13
+instance = comp, \pin_name1~I , pin_name1, asyncmod13, 1
+instance = comp, \pin_name1~clkctrl , pin_name1~clkctrl, asyncmod13, 1
+instance = comp, \inst1~0 , inst1~0, asyncmod13, 1
+instance = comp, \inst3~feeder , inst3~feeder, asyncmod13, 1
+instance = comp, \inst20~0 , inst20~0, asyncmod13, 1
+instance = comp, \pin_name2~I , pin_name2, asyncmod13, 1
+instance = comp, \pin_name3~I , pin_name3, asyncmod13, 1
+instance = comp, \pin_name4~I , pin_name4, asyncmod13, 1
+instance = comp, \pin_name5~I , pin_name5, asyncmod13, 1

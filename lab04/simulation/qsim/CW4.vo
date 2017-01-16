@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "01/08/2017 14:52:22"
+// DATE "01/13/2017 13:08:04"
 
 // 
 // Device: Altera EP2C70F896C6 Package FBGA896
@@ -136,6 +136,10 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("CW4_v.sdo");
+// synopsys translate_on
+
 wire \MUX7|Mux2~0_combout ;
 wire \MUX7|Mux0~1_combout ;
 wire \MUX0|Mux2~1_combout ;

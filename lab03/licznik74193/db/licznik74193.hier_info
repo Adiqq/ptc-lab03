@@ -6,7 +6,6 @@ OLEDR[3] <= 74193:inst.QD
 OLEDR[4] <= 74193:inst1.QA
 OLEDR[5] <= 74193:inst1.QB
 OLEDR[6] <= 74193:inst1.QC
-KEY[0] => inst13.IN0
 KEY[0] => 74193:inst.UP
 KEY[1] => 74193:inst.DN
 

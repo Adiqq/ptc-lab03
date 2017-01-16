@@ -3,43 +3,43 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'KEY[0]'
-Slack : -22.259
-TNS   : -99.941
+Slack : -6.130
+TNS   : -17.783
 
 Type  : Slow Model Hold 'KEY[0]'
-Slack : -5.928
-TNS   : -32.086
+Slack : 0.391
+TNS   : 0.000
 
 Type  : Slow Model Recovery 'KEY[0]'
-Slack : -23.143
-TNS   : -174.865
+Slack : -6.652
+TNS   : -50.086
 
 Type  : Slow Model Removal 'KEY[0]'
-Slack : -6.005
-TNS   : -30.562
+Slack : 0.918
+TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'KEY[0]'
-Slack : -4.962
-TNS   : -206.330
+Slack : -1.222
+TNS   : -9.222
 
 Type  : Fast Model Setup 'KEY[0]'
-Slack : -10.054
-TNS   : -43.206
+Slack : -2.153
+TNS   : -5.979
 
 Type  : Fast Model Hold 'KEY[0]'
-Slack : -2.749
-TNS   : -13.451
+Slack : 0.215
+TNS   : 0.000
 
 Type  : Fast Model Recovery 'KEY[0]'
-Slack : -10.577
-TNS   : -79.953
+Slack : -2.510
+TNS   : -18.729
 
 Type  : Fast Model Removal 'KEY[0]'
-Slack : -2.659
-TNS   : -13.573
+Slack : 0.512
+TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'KEY[0]'
-Slack : -2.493
-TNS   : -81.106
+Slack : -1.222
+TNS   : -9.222
 
 ------------------------------------------------------------
